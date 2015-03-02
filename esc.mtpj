@@ -326,7 +326,7 @@
       <MacroUndefinitions-DefaultValue />
       <Multiplier-DefaultValue>True</Multiplier-DefaultValue>
       <MultiplierAndDivider-DefaultValue>True</MultiplierAndDivider-DefaultValue>
-      <StandardStartupFileName-DefaultValue>s0rll.rel</StandardStartupFileName-DefaultValue>
+      <StandardStartupFileName-DefaultValue>s0rllb.rel</StandardStartupFileName-DefaultValue>
       <StartAddressOfFlashAreaBranchTable-DefaultValue />
       <CharToUnsignedChar-DefaultValue>False</CharToUnsignedChar-DefaultValue>
       <ExpansionOfIncludePreprocessDirective-DefaultValue>False</ExpansionOfIncludePreprocessDirective-DefaultValue>
@@ -353,7 +353,7 @@ cl78mf
       <NumberOfLinesPerPage-DefaultValue>0</NumberOfLinesPerPage-DefaultValue>
       <TabWidth-DefaultValue>8</TabWidth-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587763048009391305</TimeTagModified--0>
+      <TimeTagModified--0>-8587762982996833984</TimeTagModified--0>
       <AdditionalIncludePaths-0>inc
 </AdditionalIncludePaths-0>
       <AssemblyFile-0>NotOutput</AssemblyFile-0>
@@ -363,7 +363,7 @@ cl78mf
       <Optimization-0>Standard</Optimization-0>
       <PreCompileCommands-0 />
       <PreprocessListFile-0>False</PreprocessListFile-0>
-      <ProvidedStartup-0>Normal</ProvidedStartup-0>
+      <ProvidedStartup-0>Boot</ProvidedStartup-0>
       <StandardLibrary-0>True</StandardLibrary-0>
       <VerboseMode-0>False</VerboseMode-0>
       <FixedStandardLibraryArea-0>True</FixedStandardLibraryArea-0>
@@ -383,7 +383,7 @@ cl78mf
       <MacroUndefinitions-0 />
       <Multiplier-0>True</Multiplier-0>
       <MultiplierAndDivider-0>True</MultiplierAndDivider-0>
-      <StandardStartupFileName-0>s0rll.rel</StandardStartupFileName-0>
+      <StandardStartupFileName-0>s0rllb.rel</StandardStartupFileName-0>
       <ExpansionOfIncludePreprocessDirective-0>False</ExpansionOfIncludePreprocessDirective-0>
       <StaticVariablesToShortAddressing-0>NotAllocate</StaticVariablesToShortAddressing-0>
       <ExpansionOfLinePreprocessDirective-0>True</ExpansionOfLinePreprocessDirective-0>
@@ -404,9 +404,9 @@ cl78mf
       <FarAreaToRom-0>True</FarAreaToRom-0>
       <IndirectReferencingWithOneByte-0>False</IndirectReferencingWithOneByte-0>
       <RegisterVariablesToRegisterAndShortAddressing-0>False</RegisterVariablesToRegisterAndShortAddressing-0>
-      <StartAddressOfFlashArea-0 />
+      <StartAddressOfFlashArea-0>2000</StartAddressOfFlashArea-0>
       <DisablementOfSignExtendedCharCalculation-0>True</DisablementOfSignExtendedCharCalculation-0>
-      <StartAddressOfFlashAreaBranchTable-0 />
+      <StartAddressOfFlashAreaBranchTable-0>2000</StartAddressOfFlashAreaBranchTable-0>
       <CharToUnsignedChar-0>False</CharToUnsignedChar-0>
       <MirrorSourceArea-0>Maa0</MirrorSourceArea-0>
       <UseMultiplyAndAccumulation-0>True</UseMultiplyAndAccumulation-0>
@@ -507,7 +507,7 @@ cl78mf
       <ReserveWorkingMemoryForRrmDmm-DefaultValue>False</ReserveWorkingMemoryForRrmDmm-DefaultValue>
       <StartAddressOfWorkingMemoryForRrmDmm-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587762993388451973</TimeTagModified--0>
+      <TimeTagModified--0>-8587762982606201418</TimeTagModified--0>
       <DebugInformation-0>True</DebugInformation-0>
       <ErrorListFile-0>False</ErrorListFile-0>
       <LibraryFiles-0 />
@@ -538,7 +538,7 @@ cl78mf
       <MirrorSourceArea-0>Maa0</MirrorSourceArea-0>
       <NumberOfLinesPerPage-0>0</NumberOfLinesPerPage-0>
       <SegmentInfoBottomOf64Kbytes-0>False</SegmentInfoBottomOf64Kbytes-0>
-      <SettingOfFlashStartAddress-0>False</SettingOfFlashStartAddress-0>
+      <SettingOfFlashStartAddress-0>True</SettingOfFlashStartAddress-0>
       <BootAreaModuleFile-0 />
       <AllocationControlOfSelfRandomAccessMemory-0>No</AllocationControlOfSelfRandomAccessMemory-0>
       <AllocationControlOfTraceRandomAccessMemory-0>No</AllocationControlOfTraceRandomAccessMemory-0>
@@ -650,7 +650,7 @@ cl78mf
       <VariableInformationFolder-DefaultValue>%BuildModeName%</VariableInformationFolder-DefaultValue>
       <VariableInformationFileName-DefaultValue>%ProjectName%.vfi</VariableInformationFileName-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587762993388451973</TimeTagModified--0>
+      <TimeTagModified--0>-8587762982606201418</TimeTagModified--0>
       <Margin-0>0</Margin-0>
       <OutputRomRamUsage-0>False</OutputRomRamUsage-0>
       <VariableInformationFile-0>False</VariableInformationFile-0>

@@ -152,7 +152,7 @@ typedef unsigned int         _Bool;         /* C99: bool        */
 /*                                                    */
 /******************************************************/
 /* QB-R5F100LE-TB */
-#if 1
+#if 0
 #define __QB_R5F100LE_TB__                  /*  */
 /*#define PR_USE_OCD_MODE*/                 /*  */
 
@@ -240,7 +240,7 @@ typedef unsigned int         _Bool;         /* C99: bool        */
 #define PR_LED2_OFF()
 
 /*  */
-#define PR_BOOT_SW
+#define PR_BOOT_SW			1
 #endif
 
 /*  */
