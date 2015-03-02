@@ -47,6 +47,22 @@
       <ParentItem>c6851910-6dc8-417a-9562-e8e52b211fcd</ParentItem>
       <Property>3fffe5c0-1eb3-40cd-89f7-47008010810b</Property>
     </Instance>
+    <Instance Guid="69658e48-3bc5-4de0-b1c2-5038fede003e">
+      <Name>r_fsl_praxis01_boot_main.c</Name>
+      <Type>File</Type>
+      <RelativePath>src\r_fsl_praxis01_boot_main.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>b92ceca8-6b69-475b-a00a-12bfd3b0c402</ParentItem>
+      <Property>15a7e550-43c3-43a9-bf4f-251e24f3cee6</Property>
+    </Instance>
+    <Instance Guid="c8c829c5-8409-43f1-9e98-9213f11eaf21">
+      <Name>r_fsl_praxis01_boot_write.c</Name>
+      <Type>File</Type>
+      <RelativePath>src\r_fsl_praxis01_boot_write.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>b92ceca8-6b69-475b-a00a-12bfd3b0c402</ParentItem>
+      <Property>0c953b42-5004-4a89-8abb-932331c1ae05</Property>
+    </Instance>
     <Instance Guid="461633ef-ceae-4b0e-8e64-39fd0c9df983">
       <Name>fsl.h</Name>
       <Type>File</Type>
@@ -62,6 +78,38 @@
       <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
       <ParentItem>7f53c99c-b192-440a-ae26-7db476b11305</ParentItem>
       <Property>8add2448-1869-4320-bc6c-bd76b49a3519</Property>
+    </Instance>
+    <Instance Guid="b5510a41-457f-4087-aeaf-ed6c2e001520">
+      <Name>r_fsl_praxis01_BootSection.h</Name>
+      <Type>File</Type>
+      <RelativePath>inc\r_fsl_praxis01_BootSection.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>7f53c99c-b192-440a-ae26-7db476b11305</ParentItem>
+      <Property>0ec53479-ecb9-40f8-8a25-e3a1662b6bd0</Property>
+    </Instance>
+    <Instance Guid="5899f6bc-0890-4308-a112-9c178c5b11fe">
+      <Name>r_fsl_praxis01_BranchTable.h</Name>
+      <Type>File</Type>
+      <RelativePath>inc\r_fsl_praxis01_BranchTable.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>7f53c99c-b192-440a-ae26-7db476b11305</ParentItem>
+      <Property>9d985761-b772-448c-bb6e-e290dbc13c55</Property>
+    </Instance>
+    <Instance Guid="d963143f-7ef2-40d6-81d1-33e805b9eb48">
+      <Name>r_fsl_praxis01_com.h</Name>
+      <Type>File</Type>
+      <RelativePath>inc\r_fsl_praxis01_com.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>7f53c99c-b192-440a-ae26-7db476b11305</ParentItem>
+      <Property>8cd80d4b-5f93-4731-a7dc-8c795c4fd987</Property>
+    </Instance>
+    <Instance Guid="71fcbf4a-6ea2-46b9-b50d-3fc7e5f798e5">
+      <Name>r_fsl_praxis01_FlashSection.h</Name>
+      <Type>File</Type>
+      <RelativePath>inc\r_fsl_praxis01_FlashSection.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>7f53c99c-b192-440a-ae26-7db476b11305</ParentItem>
+      <Property>d59099a7-36bd-4a0d-bfcb-81c418141671</Property>
     </Instance>
     <Instance Guid="560dc0e8-e43e-48e7-8f80-d1aaa0aec5bb">
       <Name>fsl.lib</Name>
@@ -99,6 +147,24 @@
       <MemoCount>0</MemoCount>
     </Instance>
     <Instance Guid="8cb3f8d8-d875-46ef-af68-818f5f8a3a0b">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="15a7e550-43c3-43a9-bf4f-251e24f3cee6">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="9d985761-b772-448c-bb6e-e290dbc13c55">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="0c953b42-5004-4a89-8abb-932331c1ae05">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="0ec53479-ecb9-40f8-8a25-e3a1662b6bd0">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="8cd80d4b-5f93-4731-a7dc-8c795c4fd987">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="d59099a7-36bd-4a0d-bfcb-81c418141671">
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
@@ -160,7 +226,11 @@
       <SourceItemType0>LibrarySource</SourceItemType0>
       <SourceItemGuid1>78ad34c5-6eec-4067-ad03-dda50ec66cfd</SourceItemGuid1>
       <SourceItemType1>LinkDirectiveSource</SourceItemType1>
-      <SourceItemCount>2</SourceItemCount>
+      <SourceItemGuid2>69658e48-3bc5-4de0-b1c2-5038fede003e</SourceItemGuid2>
+      <SourceItemType2>CSource</SourceItemType2>
+      <SourceItemGuid3>c8c829c5-8409-43f1-9e98-9213f11eaf21</SourceItemGuid3>
+      <SourceItemType3>CSource</SourceItemType3>
+      <SourceItemCount>4</SourceItemCount>
       <VfiSourceItemCount>0</VfiSourceItemCount>
       <LastDeviceChangedCounter>0</LastDeviceChangedCounter>
     </Instance>
@@ -229,6 +299,7 @@
       <PreprocessListFile-DefaultValue>False</PreprocessListFile-DefaultValue>
       <ProvidedStartup-DefaultValue>Normal</ProvidedStartup-DefaultValue>
       <StandardLibrary-DefaultValue>True</StandardLibrary-DefaultValue>
+      <VariableInformationFile-DefaultValue />
       <VerboseMode-DefaultValue>False</VerboseMode-DefaultValue>
       <AutoVariablesToRegisterOrShortAddressing-DefaultValue>True</AutoVariablesToRegisterOrShortAddressing-DefaultValue>
       <FixedStandardLibraryArea-DefaultValue>True</FixedStandardLibraryArea-DefaultValue>
@@ -265,6 +336,9 @@
       <BranchInstructionOptimization-DefaultValue>True</BranchInstructionOptimization-DefaultValue>
       <ExpansionOfLinePreprocessDirective-DefaultValue>True</ExpansionOfLinePreprocessDirective-DefaultValue>
       <ExternalVariablesToShortAddressing-DefaultValue>NotAllocate</ExternalVariablesToShortAddressing-DefaultValue>
+      <StandardLibraryFileNames-DefaultValue>cl78m
+cl78mf
+</StandardLibraryFileNames-DefaultValue>
       <DestinationAreaOfRomData-DefaultValue>No</DestinationAreaOfRomData-DefaultValue>
       <DisablementOfIntExtensionForFunction-DefaultValue>False</DisablementOfIntExtensionForFunction-DefaultValue>
       <FixedCodeToLibrary-DefaultValue>NotReplace</FixedCodeToLibrary-DefaultValue>
@@ -402,6 +476,7 @@
       <PreLinkCommands-DefaultValue />
       <StackSymbol-DefaultValue>False</StackSymbol-DefaultValue>
       <WarningLevel-DefaultValue>NormalOutput</WarningLevel-DefaultValue>
+      <LinkDirectiveFile-DefaultValue>dr\boot_cluster.dr</LinkDirectiveFile-DefaultValue>
       <LinkDirectiveInformation-DefaultValue>True</LinkDirectiveInformation-DefaultValue>
       <OnChipDebugOptionBytesValue-DefaultValue />
       <OutputFileName-DefaultValue>%ProjectName%.lmf</OutputFileName-DefaultValue>
@@ -432,14 +507,14 @@
       <ReserveWorkingMemoryForRrmDmm-DefaultValue>False</ReserveWorkingMemoryForRrmDmm-DefaultValue>
       <StartAddressOfWorkingMemoryForRrmDmm-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587763047487209380</TimeTagModified--0>
+      <TimeTagModified--0>-8587762993388451973</TimeTagModified--0>
       <DebugInformation-0>True</DebugInformation-0>
       <ErrorListFile-0>False</ErrorListFile-0>
       <LibraryFiles-0 />
       <LinkListFile-0>True</LinkListFile-0>
       <OutputFolder-0>%BuildModeName%</OutputFolder-0>
       <PreLinkCommands-0 />
-      <StackSymbol-0>False</StackSymbol-0>
+      <StackSymbol-0>True</StackSymbol-0>
       <WarningLevel-0>NormalOutput</WarningLevel-0>
       <LinkDirectiveInformation-0>True</LinkDirectiveInformation-0>
       <OutputFileName-0>%ProjectName%.lmf</OutputFileName-0>
@@ -556,7 +631,7 @@
       <NumberOfCharactersPerLine-DefaultValue>132</NumberOfCharactersPerLine-DefaultValue>
       <NumberOfLinesPerPage-DefaultValue>0</NumberOfLinesPerPage-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587763048162825800</TimeTagModified--0>
+      <TimeTagModified--0>-8587762993388451973</TimeTagModified--0>
       <ListFile-0>False</ListFile-0>
       <OutputFolder-0>%BuildModeName%</OutputFolder-0>
       <PreLibraryCommands-0 />
@@ -575,7 +650,7 @@
       <VariableInformationFolder-DefaultValue>%BuildModeName%</VariableInformationFolder-DefaultValue>
       <VariableInformationFileName-DefaultValue>%ProjectName%.vfi</VariableInformationFileName-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587763047487209380</TimeTagModified--0>
+      <TimeTagModified--0>-8587762993388451973</TimeTagModified--0>
       <Margin-0>0</Margin-0>
       <OutputRomRamUsage-0>False</OutputRomRamUsage-0>
       <VariableInformationFile-0>False</VariableInformationFile-0>
@@ -602,6 +677,30 @@
       <ItemAddTime>635609277367556424</ItemAddTime>
       <ItemAddTimeCount>0</ItemAddTimeCount>
     </Instance>
+    <Instance Guid="69658e48-3bc5-4de0-b1c2-5038fede003e">
+      <ItemAddTime>635609333554227813</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="c8c829c5-8409-43f1-9e98-9213f11eaf21">
+      <ItemAddTime>635609333554227813</ItemAddTime>
+      <ItemAddTimeCount>1</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="b5510a41-457f-4087-aeaf-ed6c2e001520">
+      <ItemAddTime>635609333655096211</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="5899f6bc-0890-4308-a112-9c178c5b11fe">
+      <ItemAddTime>635609333655096211</ItemAddTime>
+      <ItemAddTimeCount>1</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="d963143f-7ef2-40d6-81d1-33e805b9eb48">
+      <ItemAddTime>635609333655096211</ItemAddTime>
+      <ItemAddTimeCount>2</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="71fcbf4a-6ea2-46b9-b50d-3fc7e5f798e5">
+      <ItemAddTime>635609333655096211</ItemAddTime>
+      <ItemAddTimeCount>3</ItemAddTimeCount>
+    </Instance>
     <Instance Guid="e4582a76-90da-4988-9864-24db24826845">
       <TimeTagModified-SourceItem0--0>-8587763048162835810</TimeTagModified-SourceItem0--0>
       <SourceItem0-IsLockedByUser>False</SourceItem0-IsLockedByUser>
@@ -611,6 +710,16 @@
       <TimeTagModified-SourceItem1--0>-8587763047487209380</TimeTagModified-SourceItem1--0>
       <SourceItem1-IsLockedByUser>False</SourceItem1-IsLockedByUser>
       <SourceItem1-BuildingTarget-0>True</SourceItem1-BuildingTarget-0>
+    </Instance>
+    <Instance Guid="fc999d8f-43d6-4cb3-af4b-cf6891d759fb">
+      <TimeTagModified-SourceItem2--0>-8587762991300547995</TimeTagModified-SourceItem2--0>
+      <SourceItem2-IsLockedByUser>False</SourceItem2-IsLockedByUser>
+      <SourceItem2-BuildingTarget-0>True</SourceItem2-BuildingTarget-0>
+      <SourceItem2-IndividualCompileOption-0>False</SourceItem2-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem3--0>-8587762991300547995</TimeTagModified-SourceItem3--0>
+      <SourceItem3-IsLockedByUser>False</SourceItem3-IsLockedByUser>
+      <SourceItem3-BuildingTarget-0>True</SourceItem3-BuildingTarget-0>
+      <SourceItem3-IndividualCompileOption-0>False</SourceItem3-IndividualCompileOption-0>
     </Instance>
   </Class>
   <Class Guid="44fa27c9-0aa0-4297-bd3b-2c5c5bdb8881">
