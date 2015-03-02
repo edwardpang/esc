@@ -17,15 +17,15 @@ MEMORY OCD_ROM		: ( 00FC00H, 000400H )
 ; ----------------------------------------------------------
 ; Define new memory entry for self-RAM
 ; ----------------------------------------------------------
-MEMORY SELFRAM		: ( 0FEF00H, 000400H )
+MEMORY SELFRAM		: ( 0FF500H, 000300H )
 
 ; ----------------------------------------------------------
 ; Redefined default data segment RAM
 ; ----------------------------------------------------------
-MEMORY RAM			: ( 0FF300H, 000B20H )
+MEMORY RAM			: ( 0FF800H, 000520H )
 
 ; ----------------------------------------------------------
 ; Define new memory entry for saddr area
 ; ----------------------------------------------------------
-MEMORY RAM_SADDR	: ( 0FFE20H, 0001E0H )
+MEMORY RAM_SADDR	: ( 0FFD20H, 0001C0H )
 
