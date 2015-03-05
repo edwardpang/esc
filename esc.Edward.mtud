@@ -1,0 +1,42 @@
+<CubeSuiteProject.User>
+  <Class Guid="2c267d36-9968-416b-8f39-cfcf1e069830">
+    <Instance Guid="705a6012-3a18-4d01-903f-6c55417f8f3d">
+      <ColumnStates>Header=True,LineEditor=True,SelectionEditor=True,Out of Date Module Indicator=True,Coverage=True,Address=True,Event=True,MainDebug=True,Main=True,OpCode=True,Label=True,</ColumnStates>
+    </Instance>
+    <Instance Guid="9a2aa537-6164-42cd-80e4-e708b32cd890">
+      <Bookmarks>0</Bookmarks>
+    </Instance>
+  </Class>
+  <Class Guid="34506c0a-c7d1-4c09-aee7-5072eca3d198">
+    <Instance Guid="00000000-0000-0000-0000-000000000000">
+      <LastSavedNetAdvantageVersion>12.2.20122.2006</LastSavedNetAdvantageVersion>
+    </Instance>
+  </Class>
+  <Class Guid="def4131d-299f-4229-94f7-b6796e3a759d">
+    <Instance Guid="00000000-0000-0000-0000-000000000000">
+      <LastNetAdvantageVersion>12.2.20122.2006</LastNetAdvantageVersion>
+      <LastUserVersion>5.00.00.11</LastUserVersion>
+    </Instance>
+  </Class>
+  <Class Guid="11fad805-4123-496e-99f7-1af9aead0aab">
+    <Instance Guid="00000000-0000-0000-0000-000000000000">
+      <LastNetAdvantageVersion>12.2.20122.2006</LastNetAdvantageVersion>
+      <LastUserVersion>5.00.00.11</LastUserVersion>
+    </Instance>
+  </Class>
+  <Class Guid="611ccd33-b851-4726-9e3f-a4209353c34d">
+    <Instance Guid="00000000-0000-0000-0000-000000000000">
+      <PanelCount>0</PanelCount>
+    </Instance>
+  </Class>
+  <Class Guid="a86d2744-4eb1-43a4-bbcb-1f717558eac6">
+    <Instance Guid="a86d2744-4eb1-43a4-bbcb-1f717558eac6">
+      <ExtendedItems>da4f11e9-a3b9-4331-b064-0986c5f5b9bb
+ef449dcb-545e-4d55-a94e-970944a6978e
+</ExtendedItems>
+      <TopItem>da4f11e9-a3b9-4331-b064-0986c5f5b9bb</TopItem>
+      <ViewMode>2</ViewMode>
+      <ViewModeToggle>False</ViewModeToggle>
+    </Instance>
+  </Class>
+</CubeSuiteProject.User>
