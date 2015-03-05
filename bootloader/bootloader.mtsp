@@ -4,52 +4,20 @@
     <Instance Guid="00000000-0000-0000-0000-000000000000">
       <FormatVersion>2.0</FormatVersion>
       <FileVersion>5.0</FileVersion>
-      <ProjectGuid>8b871db1-78a1-4420-971c-22065a1789ac</ProjectGuid>
-      <ProjectItemGuid>da4f11e9-a3b9-4331-b064-0986c5f5b9bb</ProjectItemGuid>
-      <FileCategoryGuid>ef449dcb-545e-4d55-a94e-970944a6978e</FileCategoryGuid>
+      <ProjectGuid>c4258b8b-2668-4512-aacf-10aedd54c844</ProjectGuid>
+      <ProjectItemGuid>12b6deb2-9579-42bc-9673-26ff9fcbc354</ProjectItemGuid>
+      <FileCategoryGuid>51063d73-a4e9-40f0-8c33-be5e7782e823</FileCategoryGuid>
       <Property>fb98844b-2c27-4275-9804-f6e63e204da0</Property>
-      <ActiveProjectGuid>8b871db1-78a1-4420-971c-22065a1789ac</ActiveProjectGuid>
     </Instance>
-    <Instance Guid="bbf392be-9376-4aba-bf45-bd3546fe324a">
-      <DependentProjectsGuidsSourceProjectsCount>0</DependentProjectsGuidsSourceProjectsCount>
-      <Type>Data</Type>
-    </Instance>
-    <Instance Guid="d2eeafa7-cf19-4cc2-b272-3acc2d8e173c">
+    <Instance Guid="a67b39c2-18f7-4afa-ad9d-961cfa1a5ff5">
       <Name>Startup</Name>
       <Type>Category</Type>
       <TreeImageGuid>ca577376-6f97-4ef1-9fe7-b03e86e75233</TreeImageGuid>
-      <ParentItem>ef449dcb-545e-4d55-a94e-970944a6978e</ParentItem>
-    </Instance>
-    <Instance Guid="0b3186ac-014e-4eed-a96d-5b2bd9428b62">
-      <Name>README.md</Name>
-      <Type>File</Type>
-      <RelativePath>README.md</RelativePath>
-      <ParentItem>ef449dcb-545e-4d55-a94e-970944a6978e</ParentItem>
-      <Property>a26c687b-e59d-4b9a-9fdb-9e6524be1891</Property>
-    </Instance>
-  </Class>
-  <Class Guid="9033e9fb-2b12-4437-a25e-27b28d42582b">
-    <Instance Guid="c4258b8b-2668-4512-aacf-10aedd54c844">
-      <Name>bootloader</Name>
-      <RelativePath>bootloader\bootloader.mtsp</RelativePath>
-    </Instance>
-    <Instance Guid="cc75cea0-dfcf-4424-bd33-82a611fb7633">
-      <Name>application</Name>
-      <RelativePath>application\application.mtsp</RelativePath>
+      <ParentItem>51063d73-a4e9-40f0-8c33-be5e7782e823</ParentItem>
     </Instance>
   </Class>
   <Class Guid="fb98844b-2c27-4275-9804-f6e63e204da0">
-    <Instance Guid="fb98844b-2c27-4275-9804-f6e63e204da0">
-      <MemoCount>0</MemoCount>
-    </Instance>
-  </Class>
-  <Class Guid="0d548289-d5e9-4893-9a8f-9374b13f19a9">
-    <Instance Guid="a26c687b-e59d-4b9a-9fdb-9e6524be1891">
-      <MemoCount>0</MemoCount>
-    </Instance>
-  </Class>
-  <Class Guid="78a5c5cd-76cb-4bcc-a031-3020011fbc9a">
-    <Instance Guid="e96d7982-7811-4f07-aa46-5befa0ad1406">
+    <Instance Guid="2a349cb6-b982-4ade-adcd-104b883ad81c">
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
@@ -120,7 +88,7 @@
       <PreBuildCommands-DefaultValue />
       <PostBuildCommands-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760893606955986</TimeTagModified--0>
+      <TimeTagModified--0>-8587760892546314080</TimeTagModified--0>
       <BuildMode-0>DefaultBuild</BuildMode-0>
       <Memo-0 />
       <OutputMessageFormat-0>%TargetFiles%</OutputMessageFormat-0>
@@ -201,7 +169,7 @@
       <NumberOfLinesPerPage-DefaultValue>0</NumberOfLinesPerPage-DefaultValue>
       <TabWidth-DefaultValue>8</TabWidth-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760893606945976</TimeTagModified--0>
+      <TimeTagModified--0>-8587760892546304046</TimeTagModified--0>
       <AdditionalIncludePaths-0 />
       <AssemblyFile-0>NotOutput</AssemblyFile-0>
       <BitFieldMostSignificantBit-0>False</BitFieldMostSignificantBit-0>
@@ -289,7 +257,7 @@
       <TabWidth-DefaultValue>8</TabWidth-DefaultValue>
       <HeaderTitle-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760893606925963</TimeTagModified--0>
+      <TimeTagModified--0>-8587760892546294018</TimeTagModified--0>
       <AdditionalIncludePaths-0 />
       <AssembleListFile-0>True</AssembleListFile-0>
       <ChineseCharactersCodeOnSourceFiles-0>ShiftJis</ChineseCharactersCodeOnSourceFiles-0>
@@ -353,7 +321,7 @@
       <ReserveWorkingMemoryForRrmDmm-DefaultValue>False</ReserveWorkingMemoryForRrmDmm-DefaultValue>
       <StartAddressOfWorkingMemoryForRrmDmm-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760893606925963</TimeTagModified--0>
+      <TimeTagModified--0>-8587760892546294018</TimeTagModified--0>
       <DebugInformation-0>True</DebugInformation-0>
       <ErrorListFile-0>False</ErrorListFile-0>
       <LibraryFiles-0 />
@@ -410,7 +378,7 @@
       <NumberOfLinesPerPage-DefaultValue>0</NumberOfLinesPerPage-DefaultValue>
       <RomizeAreaSize-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760893606915959</TimeTagModified--0>
+      <TimeTagModified--0>-8587760892546284009</TimeTagModified--0>
       <ErrorListFile-0>False</ErrorListFile-0>
       <LinkMapFile-0>True</LinkMapFile-0>
       <PreRomizeCommands-0 />
@@ -446,7 +414,7 @@
       <HexadecimalFileFormat-DefaultValue>IntelExtended</HexadecimalFileFormat-DefaultValue>
       <SplittingOfHexadecimalFile-DefaultValue>False</SplittingOfHexadecimalFile-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760893606915959</TimeTagModified--0>
+      <TimeTagModified--0>-8587760892546284009</TimeTagModified--0>
       <ErrorListFile-0>False</ErrorListFile-0>
       <FillingOfFreeMemorySpace-0>True</FillingOfFreeMemorySpace-0>
       <HexadecimalFile-0>True</HexadecimalFile-0>
@@ -477,7 +445,7 @@
       <NumberOfCharactersPerLine-DefaultValue>132</NumberOfCharactersPerLine-DefaultValue>
       <NumberOfLinesPerPage-DefaultValue>0</NumberOfLinesPerPage-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760893606915959</TimeTagModified--0>
+      <TimeTagModified--0>-8587760892546284009</TimeTagModified--0>
       <ListFile-0>False</ListFile-0>
       <OutputFolder-0>%BuildModeName%</OutputFolder-0>
       <PreLibraryCommands-0 />
@@ -496,22 +464,18 @@
       <VariableInformationFolder-DefaultValue>%BuildModeName%</VariableInformationFolder-DefaultValue>
       <VariableInformationFileName-DefaultValue>%ProjectName%.vfi</VariableInformationFileName-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760893606925963</TimeTagModified--0>
+      <TimeTagModified--0>-8587760892546294018</TimeTagModified--0>
       <Margin-0>0</Margin-0>
       <OutputRomRamUsage-0>False</OutputRomRamUsage-0>
       <VariableInformationFile-0>False</VariableInformationFile-0>
       <VariableInformationFolder-0>%BuildModeName%</VariableInformationFolder-0>
       <VariableInformationFileName-0>%ProjectName%.vfi</VariableInformationFileName-0>
     </Instance>
-    <Instance Guid="0b3186ac-014e-4eed-a96d-5b2bd9428b62">
-      <ItemAddTime>635611431543928727</ItemAddTime>
-      <ItemAddTimeCount>0</ItemAddTimeCount>
-    </Instance>
   </Class>
   <Class Guid="44fa27c9-0aa0-4297-bd3b-2c5c5bdb8881">
     <Instance Guid="44fa27c9-0aa0-4297-bd3b-2c5c5bdb8881">
       <IsLibraryMode>False</IsLibraryMode>
-      <StartUpCategoryItem>d2eeafa7-cf19-4cc2-b272-3acc2d8e173c</StartUpCategoryItem>
+      <StartUpCategoryItem>a67b39c2-18f7-4afa-ad9d-961cfa1a5ff5</StartUpCategoryItem>
     </Instance>
   </Class>
   <Class Guid="2890788c-ef94-47c1-b7a0-ea78a63c62b8">
@@ -550,7 +514,7 @@
       <DebuggerProperty-EssentialProperty-Configuration-SimulatorConfigurationFile />
       <DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-Length>1</DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-Length>
       <DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-DebuggerGuid />
-      <DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-FileName>DefaultBuild\esc.lmf</DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-FileName>
+      <DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-FileName>DefaultBuild\bootloader.lmf</DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-FileName>
       <DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-FileType>LoadModuleFile</DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-FileType>
       <DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-Offset>0</DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-Offset>
       <DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-StartAddress>0</DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-StartAddress>
