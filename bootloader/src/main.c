@@ -1,9 +1,4 @@
-#pragma sfr
-#pragma DI
-#pragma EI
-#pragma NOP
-#pragma HALT
-#pragma STOP
+#include "common.h"
 
 #include "fsl.h"
 #include "fsl_types.h"
