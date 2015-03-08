@@ -15,9 +15,105 @@
       <TreeImageGuid>ca577376-6f97-4ef1-9fe7-b03e86e75233</TreeImageGuid>
       <ParentItem>51063d73-a4e9-40f0-8c33-be5e7782e823</ParentItem>
     </Instance>
+    <Instance Guid="3f3285a1-51ce-48a7-9175-ddf082f14de3">
+      <Name>src</Name>
+      <Type>Category</Type>
+      <ParentItem>51063d73-a4e9-40f0-8c33-be5e7782e823</ParentItem>
+      <Property>c56ad5dd-67cd-4729-bda9-a780c3c5714f</Property>
+    </Instance>
+    <Instance Guid="6a6bed66-c79e-4a43-8ff6-495ec38646b5">
+      <Name>inc</Name>
+      <Type>Category</Type>
+      <ParentItem>51063d73-a4e9-40f0-8c33-be5e7782e823</ParentItem>
+      <Property>7f57d1f5-6af7-4130-84ea-b820bb1415ae</Property>
+    </Instance>
+    <Instance Guid="3b1fcbc0-bb2b-4ed8-a6b7-90110d7b6200">
+      <Name>lib</Name>
+      <Type>Category</Type>
+      <ParentItem>51063d73-a4e9-40f0-8c33-be5e7782e823</ParentItem>
+      <Property>fcc1ee92-cd11-4d62-8481-526144049750</Property>
+    </Instance>
+    <Instance Guid="5cfb8bff-4243-4f7d-a553-6e100c1cbbf1">
+      <Name>bootloader.dr</Name>
+      <Type>File</Type>
+      <RelativePath>bootloader.dr</RelativePath>
+      <TreeImageGuid>a4460d02-6943-4122-9169-dd699e916213</TreeImageGuid>
+      <ParentItem>51063d73-a4e9-40f0-8c33-be5e7782e823</ParentItem>
+      <Property>992efa0b-0295-4b9a-a015-46d6a119826a</Property>
+    </Instance>
+    <Instance Guid="c06e0be5-bb33-46af-8e0a-d4fe83d5e402">
+      <Name>README.md</Name>
+      <Type>File</Type>
+      <RelativePath>..\README.md</RelativePath>
+      <ParentItem>a67b39c2-18f7-4afa-ad9d-961cfa1a5ff5</ParentItem>
+      <Property>aba766f8-e0fb-4402-9d9e-5d3e9db43518</Property>
+    </Instance>
+    <Instance Guid="0f8cda7e-373f-4ddb-a937-83bad6621c49">
+      <Name>main.c</Name>
+      <Type>File</Type>
+      <RelativePath>src\main.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>3f3285a1-51ce-48a7-9175-ddf082f14de3</ParentItem>
+      <Property>13d51fe9-7a5b-49d8-a436-86164138047e</Property>
+    </Instance>
+    <Instance Guid="7f616bd9-86aa-48e2-b11f-6b0112673b72">
+      <Name>fsl.h</Name>
+      <Type>File</Type>
+      <RelativePath>inc\fsl.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>6a6bed66-c79e-4a43-8ff6-495ec38646b5</ParentItem>
+      <Property>93716109-7479-4423-8bc2-55efff9f2c9b</Property>
+    </Instance>
+    <Instance Guid="f898edd8-73f0-40d5-8d1e-c34bb7898fe7">
+      <Name>fsl_types.h</Name>
+      <Type>File</Type>
+      <RelativePath>inc\fsl_types.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>6a6bed66-c79e-4a43-8ff6-495ec38646b5</ParentItem>
+      <Property>bbbaa9dd-3fbd-4a1b-932a-bf09e5e27da3</Property>
+    </Instance>
+    <Instance Guid="c6a428f1-4713-45df-aad4-868d68ac54c7">
+      <Name>fsl.lib</Name>
+      <Type>File</Type>
+      <RelativePath>lib\fsl.lib</RelativePath>
+      <TreeImageGuid>7b85280b-7850-438e-9957-3b011f52c619</TreeImageGuid>
+      <ParentItem>3b1fcbc0-bb2b-4ed8-a6b7-90110d7b6200</ParentItem>
+      <Property>25c7e581-5bae-4a09-957d-b97b720b0a01</Property>
+    </Instance>
   </Class>
   <Class Guid="fb98844b-2c27-4275-9804-f6e63e204da0">
     <Instance Guid="2a349cb6-b982-4ade-adcd-104b883ad81c">
+      <MemoCount>0</MemoCount>
+    </Instance>
+  </Class>
+  <Class Guid="0d548289-d5e9-4893-9a8f-9374b13f19a9">
+    <Instance Guid="992efa0b-0295-4b9a-a015-46d6a119826a">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="aba766f8-e0fb-4402-9d9e-5d3e9db43518">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="13d51fe9-7a5b-49d8-a436-86164138047e">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="93716109-7479-4423-8bc2-55efff9f2c9b">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="bbbaa9dd-3fbd-4a1b-932a-bf09e5e27da3">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="25c7e581-5bae-4a09-957d-b97b720b0a01">
+      <MemoCount>0</MemoCount>
+    </Instance>
+  </Class>
+  <Class Guid="78a5c5cd-76cb-4bcc-a031-3020011fbc9a">
+    <Instance Guid="c56ad5dd-67cd-4729-bda9-a780c3c5714f">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="7f57d1f5-6af7-4130-84ea-b820bb1415ae">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="fcc1ee92-cd11-4d62-8481-526144049750">
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
@@ -40,6 +136,12 @@
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
+  <Class Guid="873c9a58-9bc5-439a-b476-78629a4553ed">
+    <Instance Guid="873c9a58-9bc5-439a-b476-78629a4553ed">
+      <ProjectDeviceChangedCounter>0</ProjectDeviceChangedCounter>
+      <ProjectInitialDeviceName>R5F104BA</ProjectInitialDeviceName>
+    </Instance>
+  </Class>
   <Class Guid="c3835e31-dea3-4c93-b02b-d2db997f7630">
     <Instance Guid="c3835e31-dea3-4c93-b02b-d2db997f7630">
       <BuildToolManager>11ff4962-ca73-4419-bb4a-67e9b8de9571</BuildToolManager>
@@ -52,7 +154,13 @@
       <BuildMode0>RABlAGYAYQB1AGwAdABCAHUAaQBsAGQA</BuildMode0>
       <BatchBuildFlag0>False</BatchBuildFlag0>
       <CurrentBuildMode>DefaultBuild</CurrentBuildMode>
-      <SourceItemCount>0</SourceItemCount>
+      <SourceItemGuid0>5cfb8bff-4243-4f7d-a553-6e100c1cbbf1</SourceItemGuid0>
+      <SourceItemType0>LinkDirectiveSource</SourceItemType0>
+      <SourceItemGuid1>0f8cda7e-373f-4ddb-a937-83bad6621c49</SourceItemGuid1>
+      <SourceItemType1>CSource</SourceItemType1>
+      <SourceItemGuid2>c6a428f1-4713-45df-aad4-868d68ac54c7</SourceItemGuid2>
+      <SourceItemType2>LibrarySource</SourceItemType2>
+      <SourceItemCount>3</SourceItemCount>
       <VfiSourceItemCount>0</VfiSourceItemCount>
       <LastDeviceChangedCounter>0</LastDeviceChangedCounter>
     </Instance>
@@ -77,10 +185,12 @@
       <IntermediateOutputFolder-DefaultValue>%BuildModeName%</IntermediateOutputFolder-DefaultValue>
       <OutputFolderNameForHex-DefaultValue>%BuildModeName%</OutputFolderNameForHex-DefaultValue>
       <RomizeFileOutputFolder-DefaultValue>%BuildModeName%</RomizeFileOutputFolder-DefaultValue>
+      <SystemIncludePathsForAssemble-DefaultValue />
       <MacroDefinitionForAssembler-DefaultValue />
       <OutputFileNameForHex-DefaultValue>%ProjectName%.hex</OutputFileNameForHex-DefaultValue>
       <OutputFolderNameForLinker-DefaultValue>%BuildModeName%</OutputFolderNameForLinker-DefaultValue>
       <RomizeFileName-DefaultValue>romp.lmf</RomizeFileName-DefaultValue>
+      <SystemIncludePaths-DefaultValue />
       <TemporaryFolder-DefaultValue />
       <HexadecimalFileFormat-DefaultValue>IntelExtended</HexadecimalFileFormat-DefaultValue>
       <MacroDefinitionForCompiler-DefaultValue />
@@ -119,6 +229,7 @@
       <PreprocessListFile-DefaultValue>False</PreprocessListFile-DefaultValue>
       <ProvidedStartup-DefaultValue>Normal</ProvidedStartup-DefaultValue>
       <StandardLibrary-DefaultValue>True</StandardLibrary-DefaultValue>
+      <VariableInformationFile-DefaultValue />
       <VerboseMode-DefaultValue>False</VerboseMode-DefaultValue>
       <AutoVariablesToRegisterOrShortAddressing-DefaultValue>True</AutoVariablesToRegisterOrShortAddressing-DefaultValue>
       <FixedStandardLibraryArea-DefaultValue>True</FixedStandardLibraryArea-DefaultValue>
@@ -155,6 +266,9 @@
       <BranchInstructionOptimization-DefaultValue>True</BranchInstructionOptimization-DefaultValue>
       <ExpansionOfLinePreprocessDirective-DefaultValue>True</ExpansionOfLinePreprocessDirective-DefaultValue>
       <ExternalVariablesToShortAddressing-DefaultValue>NotAllocate</ExternalVariablesToShortAddressing-DefaultValue>
+      <StandardLibraryFileNames-DefaultValue>cl78m
+cl78mf
+</StandardLibraryFileNames-DefaultValue>
       <DestinationAreaOfRomData-DefaultValue>No</DestinationAreaOfRomData-DefaultValue>
       <DisablementOfIntExtensionForFunction-DefaultValue>False</DisablementOfIntExtensionForFunction-DefaultValue>
       <FixedCodeToLibrary-DefaultValue>NotReplace</FixedCodeToLibrary-DefaultValue>
@@ -169,8 +283,9 @@
       <NumberOfLinesPerPage-DefaultValue>0</NumberOfLinesPerPage-DefaultValue>
       <TabWidth-DefaultValue>8</TabWidth-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760892546304046</TimeTagModified--0>
-      <AdditionalIncludePaths-0 />
+      <TimeTagModified--0>-8587760510876884898</TimeTagModified--0>
+      <AdditionalIncludePaths-0>inc
+</AdditionalIncludePaths-0>
       <AssemblyFile-0>NotOutput</AssemblyFile-0>
       <BitFieldMostSignificantBit-0>False</BitFieldMostSignificantBit-0>
       <CPlusPlusStyleComment-0>True</CPlusPlusStyleComment-0>
@@ -291,6 +406,7 @@
       <PreLinkCommands-DefaultValue />
       <StackSymbol-DefaultValue>False</StackSymbol-DefaultValue>
       <WarningLevel-DefaultValue>NormalOutput</WarningLevel-DefaultValue>
+      <LinkDirectiveFile-DefaultValue>bootloader.dr</LinkDirectiveFile-DefaultValue>
       <LinkDirectiveInformation-DefaultValue>True</LinkDirectiveInformation-DefaultValue>
       <OnChipDebugOptionBytesValue-DefaultValue />
       <OutputFileName-DefaultValue>%ProjectName%.lmf</OutputFileName-DefaultValue>
@@ -321,14 +437,14 @@
       <ReserveWorkingMemoryForRrmDmm-DefaultValue>False</ReserveWorkingMemoryForRrmDmm-DefaultValue>
       <StartAddressOfWorkingMemoryForRrmDmm-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760892546294018</TimeTagModified--0>
+      <TimeTagModified--0>-8587760414998789093</TimeTagModified--0>
       <DebugInformation-0>True</DebugInformation-0>
       <ErrorListFile-0>False</ErrorListFile-0>
       <LibraryFiles-0 />
       <LinkListFile-0>True</LinkListFile-0>
       <OutputFolder-0>%BuildModeName%</OutputFolder-0>
       <PreLinkCommands-0 />
-      <StackSymbol-0>False</StackSymbol-0>
+      <StackSymbol-0>True</StackSymbol-0>
       <WarningLevel-0>NormalOutput</WarningLevel-0>
       <LinkDirectiveInformation-0>True</LinkDirectiveInformation-0>
       <OutputFileName-0>%ProjectName%.lmf</OutputFileName-0>
@@ -445,7 +561,7 @@
       <NumberOfCharactersPerLine-DefaultValue>132</NumberOfCharactersPerLine-DefaultValue>
       <NumberOfLinesPerPage-DefaultValue>0</NumberOfLinesPerPage-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760892546284009</TimeTagModified--0>
+      <TimeTagModified--0>-8587760418258762384</TimeTagModified--0>
       <ListFile-0>False</ListFile-0>
       <OutputFolder-0>%BuildModeName%</OutputFolder-0>
       <PreLibraryCommands-0 />
@@ -464,12 +580,52 @@
       <VariableInformationFolder-DefaultValue>%BuildModeName%</VariableInformationFolder-DefaultValue>
       <VariableInformationFileName-DefaultValue>%ProjectName%.vfi</VariableInformationFileName-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587760892546294018</TimeTagModified--0>
+      <TimeTagModified--0>-8587760414998789093</TimeTagModified--0>
       <Margin-0>0</Margin-0>
       <OutputRomRamUsage-0>False</OutputRomRamUsage-0>
       <VariableInformationFile-0>False</VariableInformationFile-0>
       <VariableInformationFolder-0>%BuildModeName%</VariableInformationFolder-0>
       <VariableInformationFileName-0>%ProjectName%.vfi</VariableInformationFileName-0>
+    </Instance>
+    <Instance Guid="c06e0be5-bb33-46af-8e0a-d4fe83d5e402">
+      <ItemAddTime>635611434393498932</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="7f616bd9-86aa-48e2-b11f-6b0112673b72">
+      <ItemAddTime>635611813977970958</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="f898edd8-73f0-40d5-8d1e-c34bb7898fe7">
+      <ItemAddTime>635611813977970958</ItemAddTime>
+      <ItemAddTimeCount>1</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="c6a428f1-4713-45df-aad4-868d68ac54c7">
+      <ItemAddTime>635611814143621416</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="5cfb8bff-4243-4f7d-a553-6e100c1cbbf1">
+      <ItemAddTime>635611909855986715</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="0f8cda7e-373f-4ddb-a937-83bad6621c49">
+      <ItemAddTime>635611902768671842</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="2317529b-91c1-49b6-8351-6d8f51718b0d">
+      <TimeTagModified-SourceItem0--0>-8587760414998789093</TimeTagModified-SourceItem0--0>
+      <SourceItem0-IsLockedByUser>False</SourceItem0-IsLockedByUser>
+      <SourceItem0-BuildingTarget-0>True</SourceItem0-BuildingTarget-0>
+    </Instance>
+    <Instance Guid="fc999d8f-43d6-4cb3-af4b-cf6891d759fb">
+      <TimeTagModified-SourceItem1--0>-8587760422086103966</TimeTagModified-SourceItem1--0>
+      <SourceItem1-IsLockedByUser>False</SourceItem1-IsLockedByUser>
+      <SourceItem1-BuildingTarget-0>True</SourceItem1-BuildingTarget-0>
+      <SourceItem1-IndividualCompileOption-0>False</SourceItem1-IndividualCompileOption-0>
+    </Instance>
+    <Instance Guid="e4582a76-90da-4988-9864-24db24826845">
+      <TimeTagModified-SourceItem2--0>-8587760510711154392</TimeTagModified-SourceItem2--0>
+      <SourceItem2-IsLockedByUser>False</SourceItem2-IsLockedByUser>
+      <SourceItem2-BuildingTarget-0>True</SourceItem2-BuildingTarget-0>
     </Instance>
   </Class>
   <Class Guid="44fa27c9-0aa0-4297-bd3b-2c5c5bdb8881">
@@ -480,7 +636,20 @@
   </Class>
   <Class Guid="2890788c-ef94-47c1-b7a0-ea78a63c62b8">
     <Instance Guid="94bc6931-8ae1-4fe8-8c88-72587525d642">
-      <ContainLinkDirectiveData>False</ContainLinkDirectiveData>
+      <ContainLinkDirectiveData>True</ContainLinkDirectiveData>
+      <MemorySpaceCount>1</MemorySpaceCount>
+      <MemorySpaceName-0>REGULAR</MemorySpaceName-0>
+      <MemoryAreaCount>2</MemoryAreaCount>
+      <MemoryAreaName-0>ROM</MemoryAreaName-0>
+      <MemoryAreaParentMemorySpace-0>REGULAR</MemoryAreaParentMemorySpace-0>
+      <MemoryAreaStartAddress-0>0</MemoryAreaStartAddress-0>
+      <MemoryAreaSize-0>16384</MemoryAreaSize-0>
+      <ChildSegmentarentMemorySpace-0>REGULAR</ChildSegmentarentMemorySpace-0>
+      <MemoryAreaName-1>RAM</MemoryAreaName-1>
+      <MemoryAreaParentMemorySpace-1>REGULAR</MemoryAreaParentMemorySpace-1>
+      <MemoryAreaStartAddress-1>1045760</MemoryAreaStartAddress-1>
+      <MemoryAreaSize-1>2560</MemoryAreaSize-1>
+      <ChildSegmentarentMemorySpace-1>REGULAR</ChildSegmentarentMemorySpace-1>
     </Instance>
   </Class>
   <Class Guid="6d256a08-6dc9-4bdb-a221-f0f9fd7dfbf8">
@@ -555,6 +724,11 @@
       <DebuggerProperty-HookProperty-HookTransaction-Broke-Length>0</DebuggerProperty-HookProperty-HookTransaction-Broke-Length>
       <DebuggerProperty-HookProperty-HookTransaction-Connected-Length>0</DebuggerProperty-HookProperty-HookTransaction-Connected-Length>
       <DebuggerProperty-HookProperty-HookTransaction-Disconnecting-Length>0</DebuggerProperty-HookProperty-HookTransaction-Disconnecting-Length>
+    </Instance>
+  </Class>
+  <Class Guid="2a2c2a43-ecdb-4e88-80bd-e75f3e33db90">
+    <Instance Guid="2a2c2a43-ecdb-4e88-80bd-e75f3e33db90">
+      <ProductVersion>5.00.00.00</ProductVersion>
     </Instance>
   </Class>
 </CubeSuiteProject>
