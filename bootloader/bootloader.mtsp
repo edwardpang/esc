@@ -56,6 +56,22 @@
       <ParentItem>3f3285a1-51ce-48a7-9175-ddf082f14de3</ParentItem>
       <Property>13d51fe9-7a5b-49d8-a436-86164138047e</Property>
     </Instance>
+    <Instance Guid="9491d790-b1cf-48b0-bf61-5f57aff6405a">
+      <Name>rl78g14_cgc.c</Name>
+      <Type>File</Type>
+      <RelativePath>src\rl78g14_cgc.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>3f3285a1-51ce-48a7-9175-ddf082f14de3</ParentItem>
+      <Property>2c6e2d7e-d58e-4dae-b052-26a09661161c</Property>
+    </Instance>
+    <Instance Guid="03df32f4-214a-4625-998f-ceee028f0cd8">
+      <Name>rl78g14_serial.c</Name>
+      <Type>File</Type>
+      <RelativePath>src\rl78g14_serial.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>3f3285a1-51ce-48a7-9175-ddf082f14de3</ParentItem>
+      <Property>a04e8fca-b59a-4d3b-8eb3-3bbf8de97914</Property>
+    </Instance>
     <Instance Guid="7f616bd9-86aa-48e2-b11f-6b0112673b72">
       <Name>fsl.h</Name>
       <Type>File</Type>
@@ -79,6 +95,22 @@
       <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
       <ParentItem>6a6bed66-c79e-4a43-8ff6-495ec38646b5</ParentItem>
       <Property>3e219cde-03f1-4833-948c-4a56bd0f3d38</Property>
+    </Instance>
+    <Instance Guid="82bbde66-bbec-41cc-a3e4-8e634af29a31">
+      <Name>rl78g14_cgc.h</Name>
+      <Type>File</Type>
+      <RelativePath>inc\rl78g14_cgc.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>6a6bed66-c79e-4a43-8ff6-495ec38646b5</ParentItem>
+      <Property>091b44a2-a434-43f4-beb6-83396859a0c7</Property>
+    </Instance>
+    <Instance Guid="84277680-6e92-4ac6-b2d3-cbf7bc97f9b3">
+      <Name>rl78g14_serial.h</Name>
+      <Type>File</Type>
+      <RelativePath>inc\rl78g14_serial.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>6a6bed66-c79e-4a43-8ff6-495ec38646b5</ParentItem>
+      <Property>b300ce94-2ced-45d4-a7e8-483b10381fc7</Property>
     </Instance>
     <Instance Guid="c6a428f1-4713-45df-aad4-868d68ac54c7">
       <Name>fsl.lib</Name>
@@ -110,10 +142,22 @@
     <Instance Guid="bbbaa9dd-3fbd-4a1b-932a-bf09e5e27da3">
       <MemoCount>0</MemoCount>
     </Instance>
+    <Instance Guid="3e219cde-03f1-4833-948c-4a56bd0f3d38">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="091b44a2-a434-43f4-beb6-83396859a0c7">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="b300ce94-2ced-45d4-a7e8-483b10381fc7">
+      <MemoCount>0</MemoCount>
+    </Instance>
     <Instance Guid="25c7e581-5bae-4a09-957d-b97b720b0a01">
       <MemoCount>0</MemoCount>
     </Instance>
-    <Instance Guid="3e219cde-03f1-4833-948c-4a56bd0f3d38">
+    <Instance Guid="2c6e2d7e-d58e-4dae-b052-26a09661161c">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="a04e8fca-b59a-4d3b-8eb3-3bbf8de97914">
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
@@ -171,7 +215,11 @@
       <SourceItemType1>CSource</SourceItemType1>
       <SourceItemGuid2>c6a428f1-4713-45df-aad4-868d68ac54c7</SourceItemGuid2>
       <SourceItemType2>LibrarySource</SourceItemType2>
-      <SourceItemCount>3</SourceItemCount>
+      <SourceItemGuid3>9491d790-b1cf-48b0-bf61-5f57aff6405a</SourceItemGuid3>
+      <SourceItemType3>CSource</SourceItemType3>
+      <SourceItemGuid4>03df32f4-214a-4625-998f-ceee028f0cd8</SourceItemGuid4>
+      <SourceItemType4>CSource</SourceItemType4>
+      <SourceItemCount>5</SourceItemCount>
       <VfiSourceItemCount>0</VfiSourceItemCount>
       <LastDeviceChangedCounter>0</LastDeviceChangedCounter>
     </Instance>
@@ -626,6 +674,22 @@ cl78mf
       <ItemAddTime>635614564798883566</ItemAddTime>
       <ItemAddTimeCount>0</ItemAddTimeCount>
     </Instance>
+    <Instance Guid="82bbde66-bbec-41cc-a3e4-8e634af29a31">
+      <ItemAddTime>635614572162621117</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="84277680-6e92-4ac6-b2d3-cbf7bc97f9b3">
+      <ItemAddTime>635614572162621117</ItemAddTime>
+      <ItemAddTimeCount>1</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="9491d790-b1cf-48b0-bf61-5f57aff6405a">
+      <ItemAddTime>635615724617124116</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="03df32f4-214a-4625-998f-ceee028f0cd8">
+      <ItemAddTime>635615724617124116</ItemAddTime>
+      <ItemAddTimeCount>1</ItemAddTimeCount>
+    </Instance>
     <Instance Guid="2317529b-91c1-49b6-8351-6d8f51718b0d">
       <TimeTagModified-SourceItem0--0>-8587760414998789093</TimeTagModified-SourceItem0--0>
       <SourceItem0-IsLockedByUser>False</SourceItem0-IsLockedByUser>
@@ -636,6 +700,14 @@ cl78mf
       <SourceItem1-IsLockedByUser>False</SourceItem1-IsLockedByUser>
       <SourceItem1-BuildingTarget-0>True</SourceItem1-BuildingTarget-0>
       <SourceItem1-IndividualCompileOption-0>False</SourceItem1-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem3--0>-8587756600237651692</TimeTagModified-SourceItem3--0>
+      <SourceItem3-IsLockedByUser>False</SourceItem3-IsLockedByUser>
+      <SourceItem3-BuildingTarget-0>True</SourceItem3-BuildingTarget-0>
+      <SourceItem3-IndividualCompileOption-0>False</SourceItem3-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem4--0>-8587756600237651692</TimeTagModified-SourceItem4--0>
+      <SourceItem4-IsLockedByUser>False</SourceItem4-IsLockedByUser>
+      <SourceItem4-BuildingTarget-0>True</SourceItem4-BuildingTarget-0>
+      <SourceItem4-IndividualCompileOption-0>False</SourceItem4-IndividualCompileOption-0>
     </Instance>
     <Instance Guid="e4582a76-90da-4988-9864-24db24826845">
       <TimeTagModified-SourceItem2--0>-8587760510711154392</TimeTagModified-SourceItem2--0>
