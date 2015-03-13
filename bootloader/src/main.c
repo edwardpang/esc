@@ -3,10 +3,9 @@
 #include "rl78g14_cgc.h"
 #include "rl78g14_serial.h"
 
-#include "fsl.h"
-#include "fsl_types.h"
+#include "fsm_eeprom.h"
 
-void init (void) {
+void HwInit (void) {
 	DI ( );
 	
 	PIOR0 = 0x00U;
@@ -23,6 +22,13 @@ void init (void) {
 	EI ( );
 }
 
+void SwInit (void) {
+	fsm_eeprom_create ( );
+}
+
 void main (void) {
-	init ( );
+	HwInit ( );
+	SwInit ( );
+	
+	fsm_eeprom_handler ( );
 }
