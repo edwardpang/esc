@@ -63,13 +63,13 @@
       <DataFormatVersion>1.0</DataFormatVersion>
     </Instance>
     <Instance Guid="48a784ef-5532-4564-a0c1-5cb048b777b1">
-      <DeviceName>R5F104BD</DeviceName>
+      <DeviceName>R5F104LE</DeviceName>
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
   <Class Guid="873c9a58-9bc5-439a-b476-78629a4553ed">
     <Instance Guid="873c9a58-9bc5-439a-b476-78629a4553ed">
-      <ProjectDeviceChangedCounter>1</ProjectDeviceChangedCounter>
+      <ProjectDeviceChangedCounter>2</ProjectDeviceChangedCounter>
       <ProjectInitialDeviceName>R5F104BA</ProjectInitialDeviceName>
     </Instance>
   </Class>
@@ -87,7 +87,7 @@
       <CurrentBuildMode>DefaultBuild</CurrentBuildMode>
       <SourceItemCount>0</SourceItemCount>
       <VfiSourceItemCount>0</VfiSourceItemCount>
-      <LastDeviceChangedCounter>1</LastDeviceChangedCounter>
+      <LastDeviceChangedCounter>2</LastDeviceChangedCounter>
     </Instance>
     <Instance Guid="e6d45d58-de50-4ae7-8d7f-320171fa9617">
       <AdditionalIncludePathsForAssembler-DefaultValue />
@@ -121,7 +121,7 @@
       <PreBuildCommands-DefaultValue />
       <PostBuildCommands-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587754007195511280</TimeTagModified--0>
+      <TimeTagModified--0>-8587750537020038397</TimeTagModified--0>
       <BuildMode-0>DefaultBuild</BuildMode-0>
       <Memo-0 />
       <OutputMessageFormat-0>%TargetFiles%</OutputMessageFormat-0>
@@ -334,7 +334,7 @@
       <ForceLinking-DefaultValue>False</ForceLinking-DefaultValue>
       <LocalSymbolList-DefaultValue>False</LocalSymbolList-DefaultValue>
       <OtherAdditionalOptions-DefaultValue />
-      <StartAddressOfOnChipDebugOptionBytes-DefaultValue>BE00</StartAddressOfOnChipDebugOptionBytes-DefaultValue>
+      <StartAddressOfOnChipDebugOptionBytes-DefaultValue>FE00</StartAddressOfOnChipDebugOptionBytes-DefaultValue>
       <PublicSymbolList-DefaultValue>False</PublicSymbolList-DefaultValue>
       <SizeOfOnChipDebugOptionBytesArea-DefaultValue>512</SizeOfOnChipDebugOptionBytesArea-DefaultValue>
       <SystemLibraryPaths-DefaultValue />
@@ -354,7 +354,7 @@
       <ReserveWorkingMemoryForRrmDmm-DefaultValue>False</ReserveWorkingMemoryForRrmDmm-DefaultValue>
       <StartAddressOfWorkingMemoryForRrmDmm-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587754007195511280</TimeTagModified--0>
+      <TimeTagModified--0>-8587750537020078430</TimeTagModified--0>
       <DebugInformation-0>True</DebugInformation-0>
       <ErrorListFile-0>False</ErrorListFile-0>
       <LibraryFiles-0 />
@@ -378,7 +378,7 @@
       <FeedControlCode-0>False</FeedControlCode-0>
       <OnChipDebugOptionBytes-0>False</OnChipDebugOptionBytes-0>
       <OnChipDebugOptionBytesValue-0 />
-      <StartAddressOfOnChipDebugOptionBytes-0>BE00</StartAddressOfOnChipDebugOptionBytes-0>
+      <StartAddressOfOnChipDebugOptionBytes-0>FE00</StartAddressOfOnChipDebugOptionBytes-0>
       <SizeOfOnChipDebugOptionBytesArea-0>512</SizeOfOnChipDebugOptionBytesArea-0>
       <UserOptionBytes-0>False</UserOptionBytes-0>
       <UserOptionBytesValue-0 />
@@ -497,7 +497,7 @@
       <VariableInformationFolder-DefaultValue>%BuildModeName%</VariableInformationFolder-DefaultValue>
       <VariableInformationFileName-DefaultValue>%ProjectName%.vfi</VariableInformationFileName-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587754007195511280</TimeTagModified--0>
+      <TimeTagModified--0>-8587750537020078430</TimeTagModified--0>
       <Margin-0>0</Margin-0>
       <OutputRomRamUsage-0>False</OutputRomRamUsage-0>
       <VariableInformationFile-0>False</VariableInformationFile-0>
@@ -538,11 +538,11 @@
   </Class>
   <Class Guid="88233a69-1b02-4b3d-a212-ff2ec4e67e65">
     <Instance Guid="a809dbf1-d8d5-4bfb-a7f9-5874593160e2">
-      <DeviceChangedCounter>1</DeviceChangedCounter>
-      <DeviceName>R5F104BD</DeviceName>
+      <DeviceChangedCounter>2</DeviceChangedCounter>
+      <DeviceName>R5F104LE</DeviceName>
       <DebuggerProperty-EssentialProperty-Clock-MainClockFrequency>4000</DebuggerProperty-EssentialProperty-Clock-MainClockFrequency>
       <DebuggerProperty-EssentialProperty-Clock-SubClockFrequency>32768</DebuggerProperty-EssentialProperty-Clock-SubClockFrequency>
-      <DebuggerProperty-EssentialProperty-Memory-InternalRomSize>48</DebuggerProperty-EssentialProperty-Memory-InternalRomSize>
+      <DebuggerProperty-EssentialProperty-Memory-InternalRomSize>64</DebuggerProperty-EssentialProperty-Memory-InternalRomSize>
       <DebuggerProperty-EssentialProperty-Memory-InternalRamSize>5632</DebuggerProperty-EssentialProperty-Memory-InternalRamSize>
       <DebuggerProperty-EssentialProperty-Clock-SelectTimerTraceClockFrequency>SelectCpuClockFrequency</DebuggerProperty-EssentialProperty-Clock-SelectTimerTraceClockFrequency>
       <DebuggerProperty-EssentialProperty-Clock-UnitOfTimerTraceClockFrequency>MHz</DebuggerProperty-EssentialProperty-Clock-UnitOfTimerTraceClockFrequency>
