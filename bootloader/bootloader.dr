@@ -4,7 +4,9 @@
 ; ----------------------------------------------------------
 ; Redefined default data segment RAM
 ; ----------------------------------------------------------
-MEMORY ROM			: ( 00000000H, 0000A000H ) / REGULAR
+MEMORY ROM			: ( 00000000H, 0000FA00H ) / REGULAR
+MEMORY ROM_DATA		: ( 0000FA00H, 00000400H ) / REGULAR
+MEMORY OCD_ROM		: ( 0000FE00H, 00000200H ) / REGULAR
 MEMORY SELFRAM		: ( 000FE900H, 00000400H ) / REGULAR
 MEMORY RAM			: ( 000FED00H, 00001120H ) / REGULAR
 MEMORY RAM_SADDR	: ( 000FFE20H, 000000C0H ) / REGULAR

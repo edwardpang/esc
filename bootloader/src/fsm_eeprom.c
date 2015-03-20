@@ -68,8 +68,179 @@ void fsm_eeprom_handler (void) {
 		            /* EEL preparation processing ( state : EEL / closed -> EEL / opened )     */
 		            /***************************************************************************/
 		            EEL_Open();
+					
+		            /*== ->  EEL / opened -> ( Change EEL state ) ===============*/
+		            /***************************************************************************/
+		            /* EEL execution start processing ( state : EEL / opened -> EEL / started )*/
+		            /***************************************************************************/
+		            do {
+		                /* Set parameter of EEL_CMD_STARTUP command   */
+		                dtyEelReq.command_enu = EEL_CMD_STARTUP;
+		                
+		                /* Execute EEL_CMD_STARTUP command */
+		                EEL_Execute( &dtyEelReq ); 
+		                
+		                /* Wait of command processing end */
+		                while( dtyEelReq.status_enu == EEL_BUSY )
+		                {
+		                     EEL_Handler(); /* Check of command end */
+		                }
+		                    
+		                /* EEPROM emulation block inconsistency error */
+		                if( dtyEelReq.status_enu == EEL_ERR_POOL_INCONSISTENT )
+		                {
+		                    /* Set parameter of EEL_CMD_FORMAT command   */
+		                    dtyEelReq.command_enu = EEL_CMD_FORMAT;
+		                    
+		                    /* Execute EEL_CMD_FORMAT command */
+		                    EEL_Execute( &dtyEelReq );
+		                    
+		                    /* Wait of command processing end */
+		                    while( dtyEelReq.status_enu == EEL_BUSY )
+		                    {
+		                        EEL_Handler();  /* Check of command end */
+		                    }
+		                }
+		            /* If EEL_CMD_FORMAT command is successful,       */
+		            /* re-execute EEL_CMD_STARTUP command.            */
+		            } while( ( dtyEelReq.command_enu == EEL_CMD_FORMAT ) &&
+		                     ( dtyEelReq.status_enu  == EEL_OK         )  );
+		            
+		            /* EEL_CMD_FORMAT command or EEL_CMD_STARTUP command is successful. */
+		            /* If command is abnormal end,  execute EEL_CMD_SHUTDOWN command.   */
+					if( dtyEelReq.status_enu == EEL_OK ) {
+						FsmEepromState = FSM_EEPROM_STATE_EEL_READY;
+					}
+					else {
+						FsmEepromState = FSM_EEPROM_STATE_EEL_SHUTDOWN;
+					}
+				}
+				else {
+					FsmEepromState = FSM_EEPROM_STATE_FDL_CLOSE;
 				}
 			}
+			else {
+				FsmEepromState = FSM_EEPROM_STATE_END;
+			}
 			break; // FSM_EEPROM_STATE_INIT
+			
+		case FSM_EEPROM_STATE_EEL_READY:
+            do {
+	            /**************************/
+	            /* data write processing  */
+	            /**************************/
+	            /* Set of write data */
+	            dubWriteBuffer[0x00] = 0xAA;
+	            dubWriteBuffer[0x01] = 0x55;
+	            
+	            /* Set parameter of EEL_CMD_WRITE command */
+	            dtyEelReq.address_pu08   = dubWriteBuffer;
+	            dtyEelReq.identifier_u08 = 1; 
+	            dtyEelReq.command_enu    = EEL_CMD_WRITE;
+	            
+	            /* Execute EEL_CMD_WRITE command */
+	            EEL_Execute( &dtyEelReq );
+	            
+	            /* Wait of command processing end */
+	            while( dtyEelReq.status_enu == EEL_BUSY )
+	            {
+	                /* Check of command end */
+	                EEL_Handler();
+	            }
+	            
+	             /* Pool full error */
+	            if (dtyEelReq.status_enu == EEL_ERR_POOL_FULL)
+	            {
+	               /* Set parameter of EEL_CMD_REFRESH command */
+	                dtyEelReq.command_enu    = EEL_CMD_REFRESH;
+	                
+	                /* Execute EEL_CMD_REFRESH command */
+	                EEL_Execute( &dtyEelReq );
+	                
+	                /* Wait of command processing end */
+	                while( dtyEelReq.status_enu == EEL_BUSY )
+	                {
+	                    /* Check of command end */
+	                    EEL_Handler();
+	                }
+	            }
+	        /* If EEL_CMD_REFRESH command is  successful, */
+	        /* re-execute EEL_CMD_WRITE command..         */
+	        } while( ( dtyEelReq.command_enu == EEL_CMD_REFRESH ) &&
+	                 ( dtyEelReq.status_enu  == EEL_OK          )  );
+	        
+	        /* EEL_CMD_WRITE command or EEL_CMD_REFRESH command is successful. */
+	        /* If command is abnormal end, execute EEL_CMD_SHUTDOWN command.   */
+	        if ( dtyEelReq.status_enu == EEL_OK )   
+	        {
+	            /************************/
+	            /* data read processing */
+	            /************************/
+	            /* Definition for loop variables*/
+	            fdl_u16    duh_i;   
+	            /* Set parameter of EEL_CMD_READ command */
+	            dtyEelReq.address_pu08   = dubReadBuffer;
+	            dtyEelReq.identifier_u08 = 1; 
+	            dtyEelReq.command_enu    = EEL_CMD_READ;
+	            
+	            /* Execute EEL_CMD_READ command */
+	            EEL_Execute( &dtyEelReq );
+	            
+	            /* Wait of command processing end */
+	            while( dtyEelReq.status_enu == EEL_BUSY )
+	            {
+	                /* Check of command end */
+	                EEL_Handler();
+	            }
+	            
+	            if (dtyEelReq.status_enu == EEL_OK )
+	            {
+	                /* Compare of data of read and data of write. */
+	                for( duh_i = 0 ; duh_i < sizeof(type_A) ; duh_i++ )
+	                {
+	                    if( dubWriteBuffer[ duh_i ] != dubReadBuffer[ duh_i ] )
+	                    {
+	                        /* error handling */
+	                        err_flag = 1;
+	                        break;
+	                    }
+	                }
+	            }
+	        }
+	        /*== ->  EEL / started -> ( Change EEL state ) ==========*/
+			break;
+		
+		case FSM_EEPROM_STATE_EEL_SHUTDOWN:
+			/*== ->  EEL / started -> ( Change EEL state ) ==========*/
+            /***************************************************************************/
+            /* EEL Execution stop processing ( state : EEL / started -> opened )       */
+            /***************************************************************************/
+            /* Set parameter of EEL_CMD_SHUTDOWN command */
+            dtyEelReq.command_enu = EEL_CMD_SHUTDOWN;
+            
+            /* Execute EEL_CMD_SHUTDOWN */
+            EEL_Execute( &dtyEelReq );
+            
+            /* Wait of command processing end */
+            while( dtyEelReq.status_enu == EEL_BUSY )
+            {
+                /* Check of command end */
+                EEL_Handler();
+            }
+			FsmEepromState = FSM_EEPROM_STATE_EEL_CLOSE;
+			break;
+			
+		case FSM_EEPROM_STATE_EEL_CLOSE:
+			EEL_Close ( );
+			FsmEepromState = FSM_EEPROM_STATE_FDL_CLOSE;
+			break;
+			
+		case FSM_EEPROM_STATE_FDL_CLOSE:
+			FDL_Close ( );
+			FsmEepromState = FSM_EEPROM_STATE_END;
+			break;
+			
+		case FSM_EEPROM_STATE_END:
+			break;
 	}	// switch
 }
