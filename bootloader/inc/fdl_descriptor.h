@@ -4,7 +4,7 @@
 #include "fdl_types.h"
 
 /* specify the CPU frequency in [Hz]                                                              */
-#define   FDL_SYSTEM_FREQUENCY      20000000
+#define   FDL_SYSTEM_FREQUENCY      32000000
 
 /* programming voltage mode                                                                       */
 /* #define   FDL_WIDE_VOLTAGE_MODE  */

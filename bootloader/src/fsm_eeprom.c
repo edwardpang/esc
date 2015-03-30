@@ -208,6 +208,7 @@ void fsm_eeprom_handler (void) {
 	            }
 	        }
 	        /*== ->  EEL / started -> ( Change EEL state ) ==========*/
+			FsmEepromState = FSM_EEPROM_STATE_EEL_SHUTDOWN;
 			break;
 		
 		case FSM_EEPROM_STATE_EEL_SHUTDOWN:
