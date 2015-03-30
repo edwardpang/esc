@@ -80,7 +80,7 @@
 __far const eel_u08 eel_descriptor[EEL_VAR_NO+2] =
 {
   (eel_u08)(EEL_VAR_NO),      /* variable count   */  \
-  (eel_u08)(sizeof(type_A)),  /* id=1             */  \
+  (eel_u08)(sizeof(eep_type_identity)),  /* id=1             */  \
   (eel_u08)(sizeof(type_B)),  /* id=2             */  \
   (eel_u08)(sizeof(type_C)),  /* id=3             */  \
   (eel_u08)(sizeof(type_D)),  /* id=4             */  \

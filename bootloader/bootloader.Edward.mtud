@@ -30,6 +30,16 @@
       <EventFunction-Break2-SoftwareBreakData-SoftwareBreakNumber1>2</EventFunction-Break2-SoftwareBreakData-SoftwareBreakNumber1>
       <EventFunction-Break2-SoftwareBreakData-EventConditionName1>RQB2AGUAbgB0ACAAQwBvAG4AZABpAHQAaQBvAG4AIAAyAA==</EventFunction-Break2-SoftwareBreakData-EventConditionName1>
       <EventFunction-Break2-SoftwareBreakData-SaveLength>1</EventFunction-Break2-SoftwareBreakData-SaveLength>
+      <EventFunction-Break3-Name>QgByAGUAYQBrADAAMAAwADMA</EventFunction-Break3-Name>
+      <EventFunction-Break3-Description />
+      <EventFunction-Break3-EventStatus>Enable</EventFunction-Break3-EventStatus>
+      <EventFunction-Break3-EventStatusBeforeInvalid>Invalid</EventFunction-Break3-EventStatusBeforeInvalid>
+      <EventFunction-Break3-IsBuiltIn>False</EventFunction-Break3-IsBuiltIn>
+      <EventFunction-Break3-CombinationType>None</EventFunction-Break3-CombinationType>
+      <EventFunction-Break3-HardwareBreakData-SaveLength>0</EventFunction-Break3-HardwareBreakData-SaveLength>
+      <EventFunction-Break3-SoftwareBreakData-SoftwareBreakNumber1>3</EventFunction-Break3-SoftwareBreakData-SoftwareBreakNumber1>
+      <EventFunction-Break3-SoftwareBreakData-EventConditionName1>RQB2AGUAbgB0ACAAQwBvAG4AZABpAHQAaQBvAG4AIAAzAA==</EventFunction-Break3-SoftwareBreakData-EventConditionName1>
+      <EventFunction-Break3-SoftwareBreakData-SaveLength>1</EventFunction-Break3-SoftwareBreakData-SaveLength>
       <EventFunction-EventCondition1-Software-Name>RQB2AGUAbgB0ACAAQwBvAG4AZABpAHQAaQBvAG4AIAAxAA==</EventFunction-EventCondition1-Software-Name>
       <EventFunction-EventCondition1-Software-Description />
       <EventFunction-EventCondition1-Software-IsBuiltIn>False</EventFunction-EventCondition1-Software-IsBuiltIn>
@@ -39,9 +49,9 @@
       <EventFunction-EventCondition1-Software-BreakAddress-LoadModule>C:\workspace\project\esc2\sw\mcu\esc\bootloader\DefaultBuild\bootloader.lmf</EventFunction-EventCondition1-Software-BreakAddress-LoadModule>
       <EventFunction-EventCondition1-Software-BreakAddress-File>fsm_eeprom.c</EventFunction-EventCondition1-Software-BreakAddress-File>
       <EventFunction-EventCondition1-Software-BreakAddress-Symbol>_fsm_eeprom_handler</EventFunction-EventCondition1-Software-BreakAddress-Symbol>
-      <EventFunction-EventCondition1-Software-BreakAddress-Offset>377</EventFunction-EventCondition1-Software-BreakAddress-Offset>
+      <EventFunction-EventCondition1-Software-BreakAddress-Offset>375</EventFunction-EventCondition1-Software-BreakAddress-Offset>
       <EventFunction-EventCondition1-Software-EffectiveBreakAddress-LocationType>Address</EventFunction-EventCondition1-Software-EffectiveBreakAddress-LocationType>
-      <EventFunction-EventCondition1-Software-EffectiveBreakAddress-Address>1171</EventFunction-EventCondition1-Software-EffectiveBreakAddress-Address>
+      <EventFunction-EventCondition1-Software-EffectiveBreakAddress-Address>1169</EventFunction-EventCondition1-Software-EffectiveBreakAddress-Address>
       <EventFunction-EventCondition2-Software-Name>RQB2AGUAbgB0ACAAQwBvAG4AZABpAHQAaQBvAG4AIAAyAA==</EventFunction-EventCondition2-Software-Name>
       <EventFunction-EventCondition2-Software-Description />
       <EventFunction-EventCondition2-Software-IsBuiltIn>False</EventFunction-EventCondition2-Software-IsBuiltIn>
@@ -51,13 +61,25 @@
       <EventFunction-EventCondition2-Software-BreakAddress-LoadModule>C:\workspace\project\esc2\sw\mcu\esc\bootloader\DefaultBuild\bootloader.lmf</EventFunction-EventCondition2-Software-BreakAddress-LoadModule>
       <EventFunction-EventCondition2-Software-BreakAddress-File>fsm_eeprom.c</EventFunction-EventCondition2-Software-BreakAddress-File>
       <EventFunction-EventCondition2-Software-BreakAddress-Symbol>_fsm_eeprom_handler</EventFunction-EventCondition2-Software-BreakAddress-Symbol>
-      <EventFunction-EventCondition2-Software-BreakAddress-Offset>259</EventFunction-EventCondition2-Software-BreakAddress-Offset>
+      <EventFunction-EventCondition2-Software-BreakAddress-Offset>369</EventFunction-EventCondition2-Software-BreakAddress-Offset>
       <EventFunction-EventCondition2-Software-EffectiveBreakAddress-LocationType>Address</EventFunction-EventCondition2-Software-EffectiveBreakAddress-LocationType>
-      <EventFunction-EventCondition2-Software-EffectiveBreakAddress-Address>1053</EventFunction-EventCondition2-Software-EffectiveBreakAddress-Address>
+      <EventFunction-EventCondition2-Software-EffectiveBreakAddress-Address>1163</EventFunction-EventCondition2-Software-EffectiveBreakAddress-Address>
+      <EventFunction-EventCondition3-Software-Name>RQB2AGUAbgB0ACAAQwBvAG4AZABpAHQAaQBvAG4AIAAzAA==</EventFunction-EventCondition3-Software-Name>
+      <EventFunction-EventCondition3-Software-Description />
+      <EventFunction-EventCondition3-Software-IsBuiltIn>False</EventFunction-EventCondition3-Software-IsBuiltIn>
+      <EventFunction-EventCondition3-Software-EventConditionType>Software</EventFunction-EventCondition3-Software-EventConditionType>
+      <EventFunction-EventCondition3-Software-EventNumber>3</EventFunction-EventCondition3-Software-EventNumber>
+      <EventFunction-EventCondition3-Software-BreakAddress-LocationType>SymbolOffset</EventFunction-EventCondition3-Software-BreakAddress-LocationType>
+      <EventFunction-EventCondition3-Software-BreakAddress-LoadModule>C:\workspace\project\esc2\sw\mcu\esc\bootloader\DefaultBuild\bootloader.lmf</EventFunction-EventCondition3-Software-BreakAddress-LoadModule>
+      <EventFunction-EventCondition3-Software-BreakAddress-File>fsm_eeprom.c</EventFunction-EventCondition3-Software-BreakAddress-File>
+      <EventFunction-EventCondition3-Software-BreakAddress-Symbol>_fsm_eeprom_handler</EventFunction-EventCondition3-Software-BreakAddress-Symbol>
+      <EventFunction-EventCondition3-Software-BreakAddress-Offset>179</EventFunction-EventCondition3-Software-BreakAddress-Offset>
+      <EventFunction-EventCondition3-Software-EffectiveBreakAddress-LocationType>Address</EventFunction-EventCondition3-Software-EffectiveBreakAddress-LocationType>
+      <EventFunction-EventCondition3-Software-EffectiveBreakAddress-Address>973</EventFunction-EventCondition3-Software-EffectiveBreakAddress-Address>
       <EventFunction-SaveEventConditionItemHardwareNumber>0</EventFunction-SaveEventConditionItemHardwareNumber>
-      <EventFunction-SaveEventConditionItemSoftwareNumber>2</EventFunction-SaveEventConditionItemSoftwareNumber>
+      <EventFunction-SaveEventConditionItemSoftwareNumber>3</EventFunction-SaveEventConditionItemSoftwareNumber>
       <EventFunction-SaveActionEventNumber>0</EventFunction-SaveActionEventNumber>
-      <EventFunction-SaveBreakNumber>2</EventFunction-SaveBreakNumber>
+      <EventFunction-SaveBreakNumber>3</EventFunction-SaveBreakNumber>
       <EventFunction-SaveTimerNumber>1</EventFunction-SaveTimerNumber>
       <EventFunction-SaveTraceNumber>0</EventFunction-SaveTraceNumber>
       <EventFunction-SaveNumberOfProcessorElement>1</EventFunction-SaveNumberOfProcessorElement>
@@ -113,7 +135,7 @@
       <BitWidth0>8</BitWidth0>
       <Encode0>20127</Encode0>
       <WithHexadecimal0>True</WithHexadecimal0>
-      <Expanded0>True</Expanded0>
+      <Expanded0>False</Expanded0>
       <Notation0>Auto</Notation0>
       <WatchId1>1</WatchId1>
       <ParentId1>-1</ParentId1>
@@ -123,7 +145,7 @@
       <BitWidth1>8</BitWidth1>
       <Encode1>20127</Encode1>
       <WithHexadecimal1>True</WithHexadecimal1>
-      <Expanded1>True</Expanded1>
+      <Expanded1>False</Expanded1>
       <Notation1>Auto</Notation1>
       <WatchId2>2</WatchId2>
       <ParentId2>-1</ParentId2>
@@ -133,8 +155,18 @@
       <BitWidth2>8</BitWidth2>
       <Encode2>20127</Encode2>
       <WithHexadecimal2>True</WithHexadecimal2>
-      <Expanded2>True</Expanded2>
+      <Expanded2>False</Expanded2>
       <Notation2>Auto</Notation2>
+      <WatchId3>3</WatchId3>
+      <ParentId3>-1</ParentId3>
+      <WatchStatement3>eep_reset_version</WatchStatement3>
+      <WatchType3>WatchItem</WatchType3>
+      <Memo3 />
+      <BitWidth3>8</BitWidth3>
+      <Encode3>20127</Encode3>
+      <WithHexadecimal3>True</WithHexadecimal3>
+      <Expanded3>False</Expanded3>
+      <Notation3>Auto</Notation3>
     </Instance>
     <Instance Guid="3e85fe22-38a0-44af-bbc8-8b0507ddb643">
       <Name>PanelWatch2</Name>

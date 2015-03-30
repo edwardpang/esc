@@ -13,7 +13,19 @@
 /******************************************************************************
  Macro definitions
 ******************************************************************************/
-#define SAM_WRITE_SIZE 10           /* Declare write data size */
+#define SAM_WRITE_SIZE EEP_IDENTITY_SIZE           /* Declare write data size */
+
+/******************************************************************************
+ EEPROM Production Reset Value
+******************************************************************************/
+const eep_type_identity eep_reset_version = {
+	'E', 'S', 'C', ' ', ' ', ' ',
+	'E', 'S', 'C', '2', ' ', ' ',
+	'0', '0', '0', '0', '0', '0', '0', '0',
+	0, 1,									// HARDWARD VERSION
+	0, 1,									// SOFTWARE VERSION
+	0, 1,									// EEPROM VERSION
+};
 
 /******************************************************************************
  Global Variable
@@ -130,8 +142,7 @@ void fsm_eeprom_handler (void) {
 	            /* data write processing  */
 	            /**************************/
 	            /* Set of write data */
-	            dubWriteBuffer[0x00] = 0xAA;
-	            dubWriteBuffer[0x01] = 0x55;
+				memcpy (dubWriteBuffer, eep_reset_version, sizeof (eep_type_identity));
 	            
 	            /* Set parameter of EEL_CMD_WRITE command */
 	            dtyEelReq.address_pu08   = dubWriteBuffer;
@@ -196,7 +207,7 @@ void fsm_eeprom_handler (void) {
 	            if (dtyEelReq.status_enu == EEL_OK )
 	            {
 	                /* Compare of data of read and data of write. */
-	                for( duh_i = 0 ; duh_i < sizeof(type_A) ; duh_i++ )
+	                for( duh_i = 0 ; duh_i < sizeof(eep_type_identity) ; duh_i++ )
 	                {
 	                    if( dubWriteBuffer[ duh_i ] != dubReadBuffer[ duh_i ] )
 	                    {
