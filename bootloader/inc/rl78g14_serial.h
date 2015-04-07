@@ -1,6 +1,9 @@
 #ifndef RL78G14_SERIAL_H
 #define RL78G14_SERIAL_H
 
+//#define USE_SAU0_UART1
+#define USE_SAU1_UART2
+
 /***********************************************************************************************************************
 Macro definitions (Register bit)
 ***********************************************************************************************************************/
@@ -347,6 +350,8 @@ Macro definitions
 ***********************************************************************************************************************/
 #define _CE00_UART1_RECEIVE_DIVISOR      (0xCE00U)
 #define _CE00_UART1_TRANSMIT_DIVISOR     (0xCE00U)
+#define _CE00_UART2_RECEIVE_DIVISOR      (0xCE00U)
+#define _CE00_UART2_TRANSMIT_DIVISOR     (0xCE00U)
 
 /***********************************************************************************************************************
 Typedef definitions
@@ -363,4 +368,14 @@ MD_STATUS RL78G14_UART1_Send(uint8_t * const tx_buf, uint16_t tx_num);
 MD_STATUS RL78G14_UART1_Receive(uint8_t * const rx_buf, uint16_t rx_num);
 static void r_uart1_callback_receiveend(void);
 static void r_uart1_callback_sendend(void);
+
+void RL78G14_SAU1_Create(void);
+void RL78G14_UART2_Create(void);
+void RL78G14_UART2_Start(void);
+void RL78G14_UART2_Stop(void);
+MD_STATUS RL78G14_UART2_Send(uint8_t * const tx_buf, uint16_t tx_num);
+MD_STATUS RL78G14_UART2_Receive(uint8_t * const rx_buf, uint16_t rx_num);
+static void r_uart2_callback_receiveend(void);
+static void r_uart2_callback_sendend(void);
+
 #endif // RL78G14_SERIAL_H

@@ -5,12 +5,16 @@
 
 #include "fsm_eeprom.h"
 
+static uint8_t str_header[] = "ESC\r\nSoftware by Edward Pang\r\n";
+
 void HwInit (void);
 void SwInit (void);
 
 void main (void) {
 	HwInit ( );
 	SwInit ( );
+	
+	
 	while (1)
 		fsm_eeprom_handler ( );
 }
@@ -22,7 +26,7 @@ void HwInit (void) {
 	PIOR1 = 0x00U;
 	
 	RL78G14_CGC_Create ( );
-	RL78G14_SAU0_Create	( );
+	RL78G14_SAU1_Create	( );
 	
 	CRC0CTL = 0x00U;
 	IAWCTL = 0x00U;
@@ -32,5 +36,9 @@ void HwInit (void) {
 }
 
 void SwInit (void) {
+	
+	RL78G14_UART2_Start ( );
+	RL78G14_UART2_Send (str_header, sizeof (str_header));
+
 	fsm_eeprom_create ( );
 }
