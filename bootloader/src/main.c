@@ -23,7 +23,6 @@ void HwInit (void) {
 	
 	RL78G14_CGC_Create ( );
 	RL78G14_SAU0_Create	( );
-	RL78G14_UART1_Create ( );
 	
 	CRC0CTL = 0x00U;
 	IAWCTL = 0x00U;
