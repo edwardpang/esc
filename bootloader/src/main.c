@@ -7,15 +7,20 @@
 
 #include "resource_string.c"
 
+bit g_bootloader_done;
+
 void HwInit (void);
 void SwInit (void);
 
 void main (void) {
+	
 	HwInit ( );
 	SwInit ( );
 	
-	while (1)
+	g_bootloader_done = 0;
+	while (!g_bootloader_done) {
 		fsm_eeprom_handler ( );
+	}
 }
 
 void HwInit (void) {
