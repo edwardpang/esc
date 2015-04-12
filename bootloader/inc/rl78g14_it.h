@@ -1,35 +1,37 @@
+#ifndef IT_H
+#define IT_H
+
 /***********************************************************************************************************************
-Pragma directive
+Macro definitions (Register bit)
+***********************************************************************************************************************/
+/* 
+    Interval timer control register (ITMC)
+*/
+/* Interval timer operation enable/disable specification (RINTE) */
+#define _0000_IT_OPERATION_DISABLE    (0x0000U)    /* disable interval timer operation */
+#define _8000_IT_OPERATION_ENABLE     (0x8000U)    /* enable interval timer operation */
+
+/***********************************************************************************************************************
+Macro definitions
+***********************************************************************************************************************/
+/* Interval timer compare value (ITMCMP11 - 0) */
+#define _05DB_ITMCMP_VALUE            (0x05DBU)
+
+/***********************************************************************************************************************
+Typedef definitions
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
-Includes
+Global functions
 ***********************************************************************************************************************/
-#include "common.h"
-#include "rl78g14_cgc.h"
+void RL78G14_IT_Create(void);
+void RL78G14_IT_Start(void);
+void RL78G14_IT_Stop(void);
+void RL78G14_IT_Set_PowerOff(void);
+void RL78G14_IT_Create_UserInit(void);
+uint16_t RL78G14_GetTick (void);
+uint16_t RL78G14_GetTickAfterMs (uint16_t interval);
 
-/***********************************************************************************************************************
-Global variables and functions
-***********************************************************************************************************************/
-
-/***********************************************************************************************************************
-* Function Name: RL78G14_CGC_Create
-* Description  : This function initializes the clock generator.
-* Arguments    : None
-* Return Value : None
-***********************************************************************************************************************/
-void RL78G14_CGC_Create(void)
-{
-    /* Set fMX */
-    CMC = _00_CGC_HISYS_PORT | _00_CGC_SUB_PORT | _00_CGC_SYSOSC_DEFAULT | _00_CGC_SUBMODE_DEFAULT;
-    MSTOP = 1U;
-    /* Set fMAIN */
-    MCM0 = 0U;
-    /* Set fSUB */
-    XTSTOP = 1U;
-    OSMC = _10_CGC_RTC_CLK_FIL;
-    /* Set fCLK */
-    CSS = 0U;
-    /* Set fIH */
-    HIOSTOP = 0U;
-}
+/* Start user code for function. Do not edit comment generated here */
+/* End user code. Do not edit comment generated here */
+#endif

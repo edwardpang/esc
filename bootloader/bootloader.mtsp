@@ -72,6 +72,14 @@
       <ParentItem>3f3285a1-51ce-48a7-9175-ddf082f14de3</ParentItem>
       <Property>a04e8fca-b59a-4d3b-8eb3-3bbf8de97914</Property>
     </Instance>
+    <Instance Guid="82f96c38-11df-4a23-b58d-fda9d4ddd2c2">
+      <Name>rl78g14_it.c</Name>
+      <Type>File</Type>
+      <RelativePath>src\rl78g14_it.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>3f3285a1-51ce-48a7-9175-ddf082f14de3</ParentItem>
+      <Property>a51868cb-5834-4bbb-98e6-6ce9de0fdf1b</Property>
+    </Instance>
     <Instance Guid="9d7b8534-016c-4291-9f38-defa9be5c372">
       <Name>eel_descriptor.c</Name>
       <Type>File</Type>
@@ -95,6 +103,14 @@
       <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
       <ParentItem>3f3285a1-51ce-48a7-9175-ddf082f14de3</ParentItem>
       <Property>abf50ce5-81c4-411b-b23e-45688c513e87</Property>
+    </Instance>
+    <Instance Guid="e20ce910-fc82-4291-aa0e-3cfce464a258">
+      <Name>fsm_fwup.c</Name>
+      <Type>File</Type>
+      <RelativePath>src\fsm_fwup.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>3f3285a1-51ce-48a7-9175-ddf082f14de3</ParentItem>
+      <Property>aca7db2d-f2ad-4f79-9211-9104444ca81e</Property>
     </Instance>
     <Instance Guid="4339ce07-34ab-4c31-9d3d-203379d2633e">
       <Name>resource_string.c</Name>
@@ -143,6 +159,14 @@
       <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
       <ParentItem>6a6bed66-c79e-4a43-8ff6-495ec38646b5</ParentItem>
       <Property>b300ce94-2ced-45d4-a7e8-483b10381fc7</Property>
+    </Instance>
+    <Instance Guid="30765268-9f67-4e26-8473-04e5cf282959">
+      <Name>rl78g14_it.h</Name>
+      <Type>File</Type>
+      <RelativePath>inc\rl78g14_it.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>6a6bed66-c79e-4a43-8ff6-495ec38646b5</ParentItem>
+      <Property>ac2be97d-94b0-4b21-abb4-64732f9c8277</Property>
     </Instance>
     <Instance Guid="f0793993-6c26-4035-92db-b2c03555dfd0">
       <Name>eel.h</Name>
@@ -208,13 +232,13 @@
       <ParentItem>6a6bed66-c79e-4a43-8ff6-495ec38646b5</ParentItem>
       <Property>ccaff21d-3ed4-4d42-9062-c91a8a4b2c84</Property>
     </Instance>
-    <Instance Guid="c1d8e4ab-36e0-4656-8cef-0e0b764a6c00">
-      <Name>resource_string.h</Name>
+    <Instance Guid="a209cf56-087a-46d3-a028-2875535fc48f">
+      <Name>fsm_fwup.h</Name>
       <Type>File</Type>
-      <RelativePath>inc\resource_string.h</RelativePath>
+      <RelativePath>inc\fsm_fwup.h</RelativePath>
       <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
       <ParentItem>6a6bed66-c79e-4a43-8ff6-495ec38646b5</ParentItem>
-      <Property>9d077053-34b0-49fd-8702-0e288cf4caf8</Property>
+      <Property>59819976-50d8-4c10-9de5-8a1a33f00a7e</Property>
     </Instance>
     <Instance Guid="c6a428f1-4713-45df-aad4-868d68ac54c7">
       <Name>fsl.lib</Name>
@@ -274,6 +298,9 @@
     <Instance Guid="e02ae566-a4f5-47a8-b50b-d68ac997f043">
       <MemoCount>0</MemoCount>
     </Instance>
+    <Instance Guid="aca7db2d-f2ad-4f79-9211-9104444ca81e">
+      <MemoCount>0</MemoCount>
+    </Instance>
     <Instance Guid="93716109-7479-4423-8bc2-55efff9f2c9b">
       <MemoCount>0</MemoCount>
     </Instance>
@@ -313,7 +340,7 @@
     <Instance Guid="ccaff21d-3ed4-4d42-9062-c91a8a4b2c84">
       <MemoCount>0</MemoCount>
     </Instance>
-    <Instance Guid="9d077053-34b0-49fd-8702-0e288cf4caf8">
+    <Instance Guid="59819976-50d8-4c10-9de5-8a1a33f00a7e">
       <MemoCount>0</MemoCount>
     </Instance>
     <Instance Guid="25c7e581-5bae-4a09-957d-b97b720b0a01">
@@ -323,6 +350,12 @@
       <MemoCount>0</MemoCount>
     </Instance>
     <Instance Guid="ea787755-c3e3-4e9f-8b19-d1c6f714b0fc">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="a51868cb-5834-4bbb-98e6-6ce9de0fdf1b">
+      <MemoCount>0</MemoCount>
+    </Instance>
+    <Instance Guid="ac2be97d-94b0-4b21-abb4-64732f9c8277">
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
@@ -390,13 +423,17 @@
       <SourceItemType6>CSource</SourceItemType6>
       <SourceItemGuid7>4339ce07-34ab-4c31-9d3d-203379d2633e</SourceItemGuid7>
       <SourceItemType7>CSource</SourceItemType7>
-      <SourceItemGuid8>c6a428f1-4713-45df-aad4-868d68ac54c7</SourceItemGuid8>
-      <SourceItemType8>LibrarySource</SourceItemType8>
-      <SourceItemGuid9>8bdadd7c-048b-4055-8576-6ef6f7e82ef6</SourceItemGuid9>
+      <SourceItemGuid8>e20ce910-fc82-4291-aa0e-3cfce464a258</SourceItemGuid8>
+      <SourceItemType8>CSource</SourceItemType8>
+      <SourceItemGuid9>c6a428f1-4713-45df-aad4-868d68ac54c7</SourceItemGuid9>
       <SourceItemType9>LibrarySource</SourceItemType9>
-      <SourceItemGuid10>218179cc-1a4f-4702-b484-aa69a8c609f7</SourceItemGuid10>
+      <SourceItemGuid10>8bdadd7c-048b-4055-8576-6ef6f7e82ef6</SourceItemGuid10>
       <SourceItemType10>LibrarySource</SourceItemType10>
-      <SourceItemCount>11</SourceItemCount>
+      <SourceItemGuid11>218179cc-1a4f-4702-b484-aa69a8c609f7</SourceItemGuid11>
+      <SourceItemType11>LibrarySource</SourceItemType11>
+      <SourceItemGuid12>82f96c38-11df-4a23-b58d-fda9d4ddd2c2</SourceItemGuid12>
+      <SourceItemType12>CSource</SourceItemType12>
+      <SourceItemCount>13</SourceItemCount>
       <VfiSourceItemCount>0</VfiSourceItemCount>
       <LastDeviceChangedCounter>2</LastDeviceChangedCounter>
     </Instance>
@@ -519,8 +556,9 @@ cl78mf
       <NumberOfLinesPerPage-DefaultValue>0</NumberOfLinesPerPage-DefaultValue>
       <TabWidth-DefaultValue>8</TabWidth-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587750113960617096</TimeTagModified--0>
-      <AdditionalIncludePaths-0>inc
+      <TimeTagModified--0>-8587727908730589775</TimeTagModified--0>
+      <AdditionalIncludePaths-0>..
+inc
 </AdditionalIncludePaths-0>
       <AssemblyFile-0>NotOutput</AssemblyFile-0>
       <BitFieldMostSignificantBit-0>False</BitFieldMostSignificantBit-0>
@@ -673,7 +711,7 @@ cl78mf
       <ReserveWorkingMemoryForRrmDmm-DefaultValue>False</ReserveWorkingMemoryForRrmDmm-DefaultValue>
       <StartAddressOfWorkingMemoryForRrmDmm-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587750113960336878</TimeTagModified--0>
+      <TimeTagModified--0>-8587727884063194880</TimeTagModified--0>
       <DebugInformation-0>True</DebugInformation-0>
       <ErrorListFile-0>False</ErrorListFile-0>
       <LibraryFiles-0 />
@@ -797,7 +835,7 @@ cl78mf
       <NumberOfCharactersPerLine-DefaultValue>132</NumberOfCharactersPerLine-DefaultValue>
       <NumberOfLinesPerPage-DefaultValue>0</NumberOfLinesPerPage-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587753989795312868</TimeTagModified--0>
+      <TimeTagModified--0>-8587727884063194880</TimeTagModified--0>
       <ListFile-0>False</ListFile-0>
       <OutputFolder-0>%BuildModeName%</OutputFolder-0>
       <PreLibraryCommands-0 />
@@ -816,7 +854,7 @@ cl78mf
       <VariableInformationFolder-DefaultValue>%BuildModeName%</VariableInformationFolder-DefaultValue>
       <VariableInformationFileName-DefaultValue>%ProjectName%.vfi</VariableInformationFileName-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8587750113960336878</TimeTagModified--0>
+      <TimeTagModified--0>-8587727884063194880</TimeTagModified--0>
       <Margin-0>0</Margin-0>
       <OutputRomRamUsage-0>False</OutputRomRamUsage-0>
       <VariableInformationFile-0>False</VariableInformationFile-0>
@@ -923,8 +961,20 @@ cl78mf
       <ItemAddTime>635640800170776284</ItemAddTime>
       <ItemAddTimeCount>0</ItemAddTimeCount>
     </Instance>
-    <Instance Guid="c1d8e4ab-36e0-4656-8cef-0e0b764a6c00">
-      <ItemAddTime>635640800731458704</ItemAddTime>
+    <Instance Guid="e20ce910-fc82-4291-aa0e-3cfce464a258">
+      <ItemAddTime>635644385400628588</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="a209cf56-087a-46d3-a028-2875535fc48f">
+      <ItemAddTime>635644386507773992</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="82f96c38-11df-4a23-b58d-fda9d4ddd2c2">
+      <ItemAddTime>635644415945086633</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="30765268-9f67-4e26-8473-04e5cf282959">
+      <ItemAddTime>635644416530656989</ItemAddTime>
       <ItemAddTimeCount>0</ItemAddTimeCount>
     </Instance>
     <Instance Guid="2317529b-91c1-49b6-8351-6d8f51718b0d">
@@ -961,17 +1011,25 @@ cl78mf
       <SourceItem7-IsLockedByUser>False</SourceItem7-IsLockedByUser>
       <SourceItem7-BuildingTarget-0>True</SourceItem7-BuildingTarget-0>
       <SourceItem7-IndividualCompileOption-0>False</SourceItem7-IndividualCompileOption-0>
-    </Instance>
-    <Instance Guid="e4582a76-90da-4988-9864-24db24826845">
-      <TimeTagModified-SourceItem8--0>-8587760510711154392</TimeTagModified-SourceItem8--0>
+      <TimeTagModified-SourceItem8--0>-8587727939454147220</TimeTagModified-SourceItem8--0>
       <SourceItem8-IsLockedByUser>False</SourceItem8-IsLockedByUser>
       <SourceItem8-BuildingTarget-0>True</SourceItem8-BuildingTarget-0>
-      <TimeTagModified-SourceItem9--0>-8587756044076312620</TimeTagModified-SourceItem9--0>
+      <SourceItem8-IndividualCompileOption-0>False</SourceItem8-IndividualCompileOption-0>
+      <TimeTagModified-SourceItem12--0>-8587727908909689175</TimeTagModified-SourceItem12--0>
+      <SourceItem12-IsLockedByUser>False</SourceItem12-IsLockedByUser>
+      <SourceItem12-BuildingTarget-0>True</SourceItem12-BuildingTarget-0>
+      <SourceItem12-IndividualCompileOption-0>False</SourceItem12-IndividualCompileOption-0>
+    </Instance>
+    <Instance Guid="e4582a76-90da-4988-9864-24db24826845">
+      <TimeTagModified-SourceItem9--0>-8587760510711154392</TimeTagModified-SourceItem9--0>
       <SourceItem9-IsLockedByUser>False</SourceItem9-IsLockedByUser>
       <SourceItem9-BuildingTarget-0>True</SourceItem9-BuildingTarget-0>
-      <TimeTagModified-SourceItem10--0>-8587753989795312868</TimeTagModified-SourceItem10--0>
+      <TimeTagModified-SourceItem10--0>-8587756044076312620</TimeTagModified-SourceItem10--0>
       <SourceItem10-IsLockedByUser>False</SourceItem10-IsLockedByUser>
       <SourceItem10-BuildingTarget-0>True</SourceItem10-BuildingTarget-0>
+      <TimeTagModified-SourceItem11--0>-8587753989795312868</TimeTagModified-SourceItem11--0>
+      <SourceItem11-IsLockedByUser>False</SourceItem11-IsLockedByUser>
+      <SourceItem11-BuildingTarget-0>True</SourceItem11-BuildingTarget-0>
     </Instance>
   </Class>
   <Class Guid="44fa27c9-0aa0-4297-bd3b-2c5c5bdb8881">
@@ -3843,7 +3901,7 @@ cl78mf
         &lt;INTRTC InUse="0" ISR="r_rtc_interrupt" /&gt;
       &lt;/RTC&gt;
       &lt;IT&gt;
-        &lt;INTIT InUse="0" ISR="r_it_interrupt" /&gt;
+        &lt;INTIT InUse="1" ISR="r_it_interrupt" /&gt;
       &lt;/IT&gt;
       &lt;WDT&gt;
         &lt;INTWDTI InUse="1" ISR="r_wdt_interrupt" /&gt;
@@ -4439,19 +4497,19 @@ cl78mf
         &lt;r_cg_rtc.h UserName="r_cg_rtc.h" LibName=".h" InUse="" /&gt;
       &lt;/RTC&gt;
       &lt;IT&gt;
-        &lt;r_cg_it.c UserName="r_cg_it.c" LibName=".c" InUse=""&gt;
+        &lt;r_cg_it.c UserName="r_cg_it.c" LibName=".c" InUse="1"&gt;
           &lt;Type R_IT_Create="void R_IT_Create(void)" R_IT_Start="void R_IT_Start(void)" R_IT_Stop="void R_IT_Stop(void)" R_IT_Set_PowerOff="void R_IT_Set_PowerOff(void)" /&gt;
-          &lt;R_IT_Create UserName="R_IT_Create" LibName="R_IT_Create" InUse="" Init="1" InitMode="" /&gt;
-          &lt;R_IT_Start UserName="R_IT_Start" LibName="R_IT_Start" InUse="" /&gt;
-          &lt;R_IT_Stop UserName="R_IT_Stop" LibName="R_IT_Stop" InUse="" /&gt;
-          &lt;R_IT_Set_PowerOff UserName="R_IT_Set_PowerOff" LibName="R_IT_Set_PowerOff" InUse="" /&gt;
+          &lt;R_IT_Create UserName="R_IT_Create" LibName="R_IT_Create" InUse="1" Init="1" InitMode="" /&gt;
+          &lt;R_IT_Start UserName="R_IT_Start" LibName="R_IT_Start" InUse="1" /&gt;
+          &lt;R_IT_Stop UserName="R_IT_Stop" LibName="R_IT_Stop" InUse="1" /&gt;
+          &lt;R_IT_Set_PowerOff UserName="R_IT_Set_PowerOff" LibName="R_IT_Set_PowerOff" InUse="0" /&gt;
         &lt;/r_cg_it.c&gt;
-        &lt;r_cg_it_user.c UserName="r_cg_it_user.c" LibName="_user.c" InUse=""&gt;
+        &lt;r_cg_it_user.c UserName="r_cg_it_user.c" LibName="_user.c" InUse="1"&gt;
           &lt;Type R_IT_Create_UserInit="void R_IT_Create_UserInit(void)" r_it_interrupt="__interrupt static void r_it_interrupt(void)" /&gt;
-          &lt;R_IT_Create_UserInit UserName="R_IT_Create_UserInit" LibName="R_IT_Create_UserInit" InUse="" /&gt;
-          &lt;r_it_interrupt UserName="r_it_interrupt" INTHandle="" LibName="r_it_interrupt" InUse="" /&gt;
+          &lt;R_IT_Create_UserInit UserName="R_IT_Create_UserInit" LibName="R_IT_Create_UserInit" InUse="0" /&gt;
+          &lt;r_it_interrupt UserName="r_it_interrupt" INTHandle="" LibName="r_it_interrupt" InUse="1" /&gt;
         &lt;/r_cg_it_user.c&gt;
-        &lt;r_cg_it.h UserName="r_cg_it.h" LibName=".h" InUse="" /&gt;
+        &lt;r_cg_it.h UserName="r_cg_it.h" LibName=".h" InUse="1" /&gt;
       &lt;/IT&gt;
       &lt;PCLBUZ&gt;
         &lt;r_cg_pclbuz.c UserName="r_cg_pclbuz.c" LibName=".c" InUse=""&gt;
@@ -4677,8 +4735,8 @@ cl78mf
     &lt;RTC SetFlag="" HelpID="rtc" NeedRefresh="False"&gt;
       &lt;RTC MacroName="RTC" /&gt;
     &lt;/RTC&gt;
-    &lt;IT SetFlag="" HelpID="intervaltimer" NeedRefresh="False"&gt;
-      &lt;IT MacroName="IntervalTM" /&gt;
+    &lt;IT SetFlag="True" HelpID="intervaltimer" NeedRefresh="False"&gt;
+      &lt;IT MacroName="IntervalTM" SetFlag="True" /&gt;
     &lt;/IT&gt;
     &lt;PCLBUZ SetFlag="" HelpID="PCLBUZ" NeedRefresh="False"&gt;
       &lt;PCLBUZ0 MacroName="PCLBUZ" Channel="0" /&gt;
@@ -4830,6 +4888,13 @@ cl78mf
     &lt;IICA0&gt;
       &lt;setting name="Mode" value="Unused" /&gt;
     &lt;/IICA0&gt;
+    &lt;IT&gt;
+      &lt;setting name="IntervalValue" value="100" /&gt;
+      &lt;setting name="ValueScale" value="0" /&gt;
+      &lt;setting name="Operation" value="enable" /&gt;
+      &lt;setting name="INTTIT_priority" value="3" /&gt;
+      &lt;setting name="INTITUse" value="true" /&gt;
+    &lt;/IT&gt;
   &lt;/SETTING&gt;
 &lt;/RL78G14&gt;</CodeGenerator>
       <FormatVersion>1.0</FormatVersion>

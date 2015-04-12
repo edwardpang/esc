@@ -2,6 +2,7 @@
 
 #include "rl78g14_cgc.h"
 #include "rl78g14_serial.h"
+#include "rl78g14_it.h"
 
 #include "fsm_eeprom.h"
 #include "fsm_fwup.h"
@@ -20,10 +21,12 @@ void main (void) {
 	
 	g_bootloader_done = 0;
 	while (!g_bootloader_done) {
-		if (fsm_eeprom_get_state != FSM_EEPROM_STATE_END)
+		if (fsm_eeprom_get_state ( ) != FSM_EEPROM_STATE_END) {
 			fsm_eeprom_handler ( );
-		else
+		}
+		else {
 			fsm_fwup_handler ( );
+		}
 	}
 }
 
@@ -35,6 +38,7 @@ void HwInit (void) {
 	
 	RL78G14_CGC_Create ( );
 	RL78G14_SAU1_Create	( );
+	RL78G14_IT_Create ( );
 	
 	CRC0CTL = 0x00U;
 	IAWCTL = 0x00U;
@@ -44,9 +48,9 @@ void HwInit (void) {
 }
 
 void SwInit (void) {
-	
 	RL78G14_UART2_Start ( );
-	RL78G14_UART2_Send (str_header, sizeof (str_header));
+	RL78G14_IT_Start ( );
+	//RL78G14_UART2_Send (str_header, sizeof (str_header));
 
 	fsm_eeprom_create ( );
 	fsm_fwup_create ( );
