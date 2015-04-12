@@ -4,6 +4,7 @@
 #include "rl78g14_serial.h"
 
 #include "fsm_eeprom.h"
+#include "fsm_fwup.h"
 
 #include "resource_string.c"
 
@@ -19,7 +20,10 @@ void main (void) {
 	
 	g_bootloader_done = 0;
 	while (!g_bootloader_done) {
-		fsm_eeprom_handler ( );
+		if (fsm_eeprom_get_state != FSM_EEPROM_STATE_END)
+			fsm_eeprom_handler ( );
+		else
+			fsm_fwup_handler ( );
 	}
 }
 
@@ -45,4 +49,5 @@ void SwInit (void) {
 	RL78G14_UART2_Send (str_header, sizeof (str_header));
 
 	fsm_eeprom_create ( );
+	fsm_fwup_create ( );
 }

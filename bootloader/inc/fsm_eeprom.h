@@ -1,8 +1,9 @@
-#ifndef _TASK_EEPROM_H_
-#define _TASK_EEPROM_H_
+#ifndef _FSM_EEPROM_H_
+#define _FSM_EEPROM_H_
 
 typedef enum {
 	FSM_EEPROM_STATE_INIT = 0,
+	FSM_EEPROM_STATE_EEL_IDLE,
 	FSM_EEPROM_STATE_EEL_READY,
 	FSM_EEPROM_STATE_EEL_SHUTDOWN,
 	FSM_EEPROM_STATE_EEL_CLOSE,
@@ -14,5 +15,6 @@ typedef enum {
 
 void fsm_eeprom_create (void);
 void fsm_eeprom_handler (void);
+e_fsm_eeprom_state fsm_eeprom_get_state (void);
 
-#endif // _TASK_EEPROM_H_
+#endif // _FSM_EEPROM_H_

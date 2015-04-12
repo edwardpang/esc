@@ -74,6 +74,9 @@ typedef enum {
 	EEP_IDENTITY_EEP_VER,
 	EEP_IDENTITY_EEP_VER_1,
 	
+	EEP_IDENTITY_ROM_CRC,
+	EEP_IDENTITY_ROM_CRC_1,
+	
 	EEP_IDENTITY_SIZE
 } e_eep_type_version;
 typedef   eel_u08   eep_type_identity[EEP_IDENTITY_SIZE];

@@ -25,12 +25,13 @@ const eep_type_identity eep_reset_version = {
 	0, 1,									// HARDWARD VERSION
 	0, 1,									// SOFTWARE VERSION
 	0, 1,									// EEPROM VERSION
+	0, 0,									// ROM CRC
 };
 
 /******************************************************************************
  Global Variable
 ******************************************************************************/
-e_fsm_eeprom_state	FsmEepromState;
+e_fsm_eeprom_state	gFsmEepromState;
 
 /* Definition of variables */
 eel_request_t   dtyEelReq;
@@ -40,11 +41,11 @@ fdl_status_t    fdlStatus = 0;
 eel_u08         err_flag = 0;
 
 void fsm_eeprom_create (void) {
-	FsmEepromState = FSM_EEPROM_STATE_INIT;
+	gFsmEepromState = FSM_EEPROM_STATE_INIT;
 }
 
 void fsm_eeprom_handler (void) {
-	switch (FsmEepromState) {
+	switch (gFsmEepromState) {
 		case FSM_EEPROM_STATE_INIT:
 			/* Initialize EEL requester */
 			dtyEelReq.address_pu08   = 0;
@@ -121,20 +122,23 @@ void fsm_eeprom_handler (void) {
 		            /* EEL_CMD_FORMAT command or EEL_CMD_STARTUP command is successful. */
 		            /* If command is abnormal end,  execute EEL_CMD_SHUTDOWN command.   */
 					if( dtyEelReq.status_enu == EEL_OK ) {
-						FsmEepromState = FSM_EEPROM_STATE_EEL_READY;
+						gFsmEepromState = FSM_EEPROM_STATE_EEL_READY;
 					}
 					else {
-						FsmEepromState = FSM_EEPROM_STATE_EEL_SHUTDOWN;
+						gFsmEepromState = FSM_EEPROM_STATE_EEL_SHUTDOWN;
 					}
 				}
 				else {
-					FsmEepromState = FSM_EEPROM_STATE_FDL_CLOSE;
+					gFsmEepromState = FSM_EEPROM_STATE_FDL_CLOSE;
 				}
 			}
 			else {
-				FsmEepromState = FSM_EEPROM_STATE_END;
+				gFsmEepromState = FSM_EEPROM_STATE_END;
 			}
 			break; // FSM_EEPROM_STATE_INIT
+		
+		case FSM_EEPROM_STATE_EEL_IDLE:
+			break;
 			
 		case FSM_EEPROM_STATE_EEL_READY:
             do {
@@ -219,7 +223,7 @@ void fsm_eeprom_handler (void) {
 	            }
 	        }
 	        /*== ->  EEL / started -> ( Change EEL state ) ==========*/
-			FsmEepromState = FSM_EEPROM_STATE_EEL_SHUTDOWN;
+			gFsmEepromState = FSM_EEPROM_STATE_EEL_SHUTDOWN;
 			break;
 		
 		case FSM_EEPROM_STATE_EEL_SHUTDOWN:
@@ -239,20 +243,24 @@ void fsm_eeprom_handler (void) {
                 /* Check of command end */
                 EEL_Handler();
             }
-			FsmEepromState = FSM_EEPROM_STATE_EEL_CLOSE;
+			gFsmEepromState = FSM_EEPROM_STATE_EEL_CLOSE;
 			break;
 			
 		case FSM_EEPROM_STATE_EEL_CLOSE:
 			EEL_Close ( );
-			FsmEepromState = FSM_EEPROM_STATE_FDL_CLOSE;
+			gFsmEepromState = FSM_EEPROM_STATE_FDL_CLOSE;
 			break;
 			
 		case FSM_EEPROM_STATE_FDL_CLOSE:
 			FDL_Close ( );
-			FsmEepromState = FSM_EEPROM_STATE_END;
+			gFsmEepromState = FSM_EEPROM_STATE_END;
 			break;
 			
 		case FSM_EEPROM_STATE_END:
 			break;
 	}	// switch
+}
+
+e_fsm_eeprom_state fsm_eeprom_get_state (void) {
+	return gFsmEepromState;
 }
