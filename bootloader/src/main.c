@@ -5,7 +5,7 @@
 
 #include "fsm_eeprom.h"
 
-static uint8_t str_header[] = "ESC\r\nSoftware by Edward Pang\r\n";
+#include "resource_string.c"
 
 void HwInit (void);
 void SwInit (void);
@@ -13,7 +13,6 @@ void SwInit (void);
 void main (void) {
 	HwInit ( );
 	SwInit ( );
-	
 	
 	while (1)
 		fsm_eeprom_handler ( );
