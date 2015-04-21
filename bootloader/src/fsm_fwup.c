@@ -3,33 +3,14 @@
 #include "rl78g14_serial.h"
 #include "rl78g14_it.h"
 
-#define SOH  0x01
-#define STX  0x02
-#define EOT  0x04
-#define ACK  0x06
-#define DLE  0x10
-#define XON  0x11
-#define XOFF  0x13
-#define NAK  0x15
-#define CAN  0x18
-#define CTRLZ 0x1A
-typedef enum {
-	XMODEM_CODE_SOH = 0,
-	XMODEM_CODE_STX,
-	XMODEM_CODE_EOT,
-	XMODEM_CODE_ACK,
-	XMODEM_CODE_DLE,
-	XMODEM_CODE_XON,
-	XMODEM_CODE_XOFF,
-	XMODEM_CODE_NAK,
-	XMODEM_CODE_CAN,
-	XMODEM_CODE_CTRLZ,
-	XMODEM_CODE_NUM
-} e_xmodem_code;
+#include <string.h>
 
-static uint8_t str_xmodem[] = {0x01, 0x02, 0x04, 0x06, 0x10, 0x11, 0x13, 0x15, 0x18, 0x1A};
-static uint8_t str_xmodem_ready[] = "RX ready ...";
-static uint8_t str_xmodem_done[] = "done\r\n";
+static uint8_t str_at[] = "AT";
+static uint8_t str_at_ok[] = "OK";
+static uint8_t str_type_remote_control[] = "AT+TYPE1";
+static uint8_t str_type_remote_control_ok[] = "OK+Set:1";
+static uint8_t str_type_remote_address[] = "AT+RADD?";
+static uint8_t str_type_remote_not_connected[] = "OK+RADD:000000000000";
 
 /******************************************************************************
  Macro definitions
@@ -45,82 +26,50 @@ static uint8_t str_xmodem_done[] = "done\r\n";
 e_fsm_fwup_state	gFsmFwupState;
 uint16_t			gFsmFwupStateTimeout;
 
+void delay (uint8_t t) {
+	uint16_t dummy = (t << 8);
+
+	while (dummy--);
+}
+
 void fsm_fwup_create (void) {
 	gFsmFwupState = FSM_FWUP_STATE_INIT;
 }
 
 void fsm_fwup_handler (void) {
-	uint8_t header;
-	uint8_t block, block_complement;
-	uint8_t packet[128];
-	uint8_t chksum;
+	uint8_t rxbuf[200];
 	
+	memset (rxbuf, 0, 200);
 	switch (gFsmFwupState) {
 		case FSM_FWUP_STATE_INIT:
-			RL78G14_UART2_Send (str_xmodem_ready, sizeof (str_xmodem_ready));
-			gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (1000);
-			gFsmFwupState = FSM_FWUP_STATE_PRINT_HEADER;
-			break;
+			RL78G14_UART2_Send (str_at, sizeof (str_at)-1);
+			RL78G14_UART2_Receive (&rxbuf, sizeof (str_at_ok)-1);
 
-		case FSM_FWUP_STATE_PRINT_HEADER:
-			if (RL78G14_GetTick ( ) == gFsmFwupStateTimeout)
-				gFsmFwupState = FSM_FWUP_STATE_IDLE;
-			break;
-			
-		case FSM_FWUP_STATE_IDLE:
-			header = 0;
-			block = 0;
-			block_complement = 0;
-			memset (packet, 0, 128);
-			RL78G14_UART2_Send (&str_xmodem[XMODEM_CODE_NAK], 1);
-			gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (1000);
-			gFsmFwupState = FSM_FWUP_STATE_WAIT_PACKET;
-			break;
+			gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (100);
+			while (RL78G14_GetTick ( ) != gFsmFwupStateTimeout);
 
-		case FSM_FWUP_STATE_WAIT_PACKET:
-			if (RL78G14_GetTick ( ) == gFsmFwupStateTimeout)
-				gFsmFwupState = FSM_FWUP_STATE_IDLE;
-			else {
-				RL78G14_UART2_Receive (&header, 1);
-				switch (header) {
-					case SOH:
-						RL78G14_UART2_Receive (&block, 1);
-						RL78G14_UART2_Receive (&block_complement, 1);
-						if (block == ~block_complement) {
-							RL78G14_UART2_Receive (packet, 128);
-							RL78G14_UART2_Receive (&chksum, 1);
-							RL78G14_UART2_Send (&str_xmodem[XMODEM_CODE_ACK], 1);
-						}
-						else
-							RL78G14_UART2_Send (&str_xmodem[XMODEM_CODE_NAK], 1);
-						break;
-						
-					case STX:
-						RL78G14_UART2_Send (&str_xmodem[XMODEM_CODE_NAK], 1);
-						break;
-						
-					case EOT:
-						RL78G14_UART2_Send (&str_xmodem[XMODEM_CODE_ACK], 1);
-						gFsmFwupState = FSM_FWUP_STATE_EOT;
-						break;
-						
-					default:
-						break;
-				}
+			if (strstr (rxbuf, str_at_ok) != NULL) {
+				RL78G14_UART2_Send (str_type_remote_control, sizeof (str_type_remote_control)-1);
+				RL78G14_UART2_Receive (&rxbuf, sizeof (str_type_remote_control_ok)-1);
+				gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (100);
+				while (RL78G14_GetTick ( ) != gFsmFwupStateTimeout);
+				if (strstr (rxbuf, str_type_remote_control_ok) != NULL)
+					gFsmFwupState = FSM_FWUP_STATE_IDLE;
 			}
 			break;
+
+		case FSM_FWUP_STATE_IDLE:
+			RL78G14_UART2_Send (str_type_remote_address, sizeof (str_type_remote_address)-1);
+			RL78G14_UART2_Receive (&rxbuf, sizeof (str_type_remote_not_connected)-1);
+			gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (200);
+			while (RL78G14_GetTick ( ) != gFsmFwupStateTimeout);
+			if (strlen (rxbuf) == 0)
+				gFsmFwupState = FSM_FWUP_STATE_DEVICE_CONNECTED;
+			break;
+
+		case FSM_FWUP_STATE_DEVICE_CONNECTED:
+			break;
 			
-		case FSM_FWUP_STATE_EOT:
-			RL78G14_UART2_Send (str_xmodem_done, sizeof (str_xmodem_done));
-			gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (1000);
-			gFsmFwupState = FSM_FWUP_STATE_PRINT_DONE;
-			break;
-
-		case FSM_FWUP_STATE_PRINT_DONE:
-			if (RL78G14_GetTick ( ) == gFsmFwupStateTimeout)
-				gFsmFwupState = FSM_FWUP_STATE_COMPLETE;
-			break;
-
 		case FSM_FWUP_STATE_COMPLETE:
 			break;
 	}	// switch

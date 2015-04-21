@@ -10,32 +10,10 @@
       <EventFunction-Timer1-TimerLimit>0</EventFunction-Timer1-TimerLimit>
       <EventFunction-Timer1-StartTimerEvent-SaveLength>0</EventFunction-Timer1-StartTimerEvent-SaveLength>
       <EventFunction-Timer1-EndTimerEvent-SaveLength>0</EventFunction-Timer1-EndTimerEvent-SaveLength>
-      <EventFunction-Break1-Name>QgByAGUAYQBrADAAMAAwADEA</EventFunction-Break1-Name>
-      <EventFunction-Break1-Description />
-      <EventFunction-Break1-EventStatus>Enable</EventFunction-Break1-EventStatus>
-      <EventFunction-Break1-EventStatusBeforeInvalid>Invalid</EventFunction-Break1-EventStatusBeforeInvalid>
-      <EventFunction-Break1-IsBuiltIn>False</EventFunction-Break1-IsBuiltIn>
-      <EventFunction-Break1-CombinationType>None</EventFunction-Break1-CombinationType>
-      <EventFunction-Break1-HardwareBreakData-SaveLength>0</EventFunction-Break1-HardwareBreakData-SaveLength>
-      <EventFunction-Break1-SoftwareBreakData-SoftwareBreakNumber1>1</EventFunction-Break1-SoftwareBreakData-SoftwareBreakNumber1>
-      <EventFunction-Break1-SoftwareBreakData-EventConditionName1>RQB2AGUAbgB0ACAAQwBvAG4AZABpAHQAaQBvAG4AIAAxAA==</EventFunction-Break1-SoftwareBreakData-EventConditionName1>
-      <EventFunction-Break1-SoftwareBreakData-SaveLength>1</EventFunction-Break1-SoftwareBreakData-SaveLength>
-      <EventFunction-EventCondition1-Software-Name>RQB2AGUAbgB0ACAAQwBvAG4AZABpAHQAaQBvAG4AIAAxAA==</EventFunction-EventCondition1-Software-Name>
-      <EventFunction-EventCondition1-Software-Description />
-      <EventFunction-EventCondition1-Software-IsBuiltIn>False</EventFunction-EventCondition1-Software-IsBuiltIn>
-      <EventFunction-EventCondition1-Software-EventConditionType>Software</EventFunction-EventCondition1-Software-EventConditionType>
-      <EventFunction-EventCondition1-Software-EventNumber>1</EventFunction-EventCondition1-Software-EventNumber>
-      <EventFunction-EventCondition1-Software-BreakAddress-LocationType>SymbolOffset</EventFunction-EventCondition1-Software-BreakAddress-LocationType>
-      <EventFunction-EventCondition1-Software-BreakAddress-LoadModule>C:\workspace\project\esc2\sw\mcu\esc\bootloader\DefaultBuild\bootloader.lmf</EventFunction-EventCondition1-Software-BreakAddress-LoadModule>
-      <EventFunction-EventCondition1-Software-BreakAddress-File>fsm_fwup.c</EventFunction-EventCondition1-Software-BreakAddress-File>
-      <EventFunction-EventCondition1-Software-BreakAddress-Symbol>_fsm_fwup_handler</EventFunction-EventCondition1-Software-BreakAddress-Symbol>
-      <EventFunction-EventCondition1-Software-BreakAddress-Offset>150</EventFunction-EventCondition1-Software-BreakAddress-Offset>
-      <EventFunction-EventCondition1-Software-EffectiveBreakAddress-LocationType>Address</EventFunction-EventCondition1-Software-EffectiveBreakAddress-LocationType>
-      <EventFunction-EventCondition1-Software-EffectiveBreakAddress-Address>1422</EventFunction-EventCondition1-Software-EffectiveBreakAddress-Address>
       <EventFunction-SaveEventConditionItemHardwareNumber>0</EventFunction-SaveEventConditionItemHardwareNumber>
-      <EventFunction-SaveEventConditionItemSoftwareNumber>1</EventFunction-SaveEventConditionItemSoftwareNumber>
+      <EventFunction-SaveEventConditionItemSoftwareNumber>0</EventFunction-SaveEventConditionItemSoftwareNumber>
       <EventFunction-SaveActionEventNumber>0</EventFunction-SaveActionEventNumber>
-      <EventFunction-SaveBreakNumber>1</EventFunction-SaveBreakNumber>
+      <EventFunction-SaveBreakNumber>0</EventFunction-SaveBreakNumber>
       <EventFunction-SaveTimerNumber>1</EventFunction-SaveTimerNumber>
       <EventFunction-SaveTraceNumber>0</EventFunction-SaveTraceNumber>
       <EventFunction-SaveNumberOfProcessorElement>1</EventFunction-SaveNumberOfProcessorElement>
@@ -77,15 +55,15 @@
   <Class Guid="eeae2c1c-3b17-44ca-9a69-17638edf07a9">
     <Instance Guid="ffd1bb0e-b707-4d38-8165-aa8629d78fcc">
       <Name>PanelWatch1</Name>
-      <WatchExpressionColumnWidth>150</WatchExpressionColumnWidth>
-      <ValueColumnWindth>202</ValueColumnWindth>
+      <WatchExpressionColumnWidth>69</WatchExpressionColumnWidth>
+      <ValueColumnWindth>168</ValueColumnWindth>
       <TypeColumnWidth>150</TypeColumnWidth>
       <AddressColumnWidth>116</AddressColumnWidth>
       <MemoColumnWidth>150</MemoColumnWidth>
       <ArrayIndexNotation>None</ArrayIndexNotation>
       <WatchId0>0</WatchId0>
       <ParentId0>-1</ParentId0>
-      <WatchStatement0>tx_buf</WatchStatement0>
+      <WatchStatement0>rxbuf</WatchStatement0>
       <WatchType0>WatchItem</WatchType0>
       <Memo0 />
       <BitWidth0>8</BitWidth0>
@@ -93,76 +71,6 @@
       <WithHexadecimal0>True</WithHexadecimal0>
       <Expanded0>False</Expanded0>
       <Notation0>Auto</Notation0>
-      <WatchId1>1</WatchId1>
-      <ParentId1>-1</ParentId1>
-      <WatchStatement1>g_uart2_tx_count</WatchStatement1>
-      <WatchType1>WatchItem</WatchType1>
-      <Memo1 />
-      <BitWidth1>8</BitWidth1>
-      <Encode1>20127</Encode1>
-      <WithHexadecimal1>True</WithHexadecimal1>
-      <Expanded1>False</Expanded1>
-      <Notation1>Auto</Notation1>
-      <WatchId2>2</WatchId2>
-      <ParentId2>-1</ParentId2>
-      <WatchStatement2>*gp_uart2_tx_address</WatchStatement2>
-      <WatchType2>WatchItem</WatchType2>
-      <Memo2 />
-      <BitWidth2>8</BitWidth2>
-      <Encode2>20127</Encode2>
-      <WithHexadecimal2>True</WithHexadecimal2>
-      <Expanded2>False</Expanded2>
-      <Notation2>Hexadecimal</Notation2>
-      <WatchId3>3</WatchId3>
-      <ParentId3>-1</ParentId3>
-      <WatchStatement3>gp_uart2_tx_address</WatchStatement3>
-      <WatchType3>WatchItem</WatchType3>
-      <Memo3 />
-      <BitWidth3>8</BitWidth3>
-      <Encode3>20127</Encode3>
-      <WithHexadecimal3>True</WithHexadecimal3>
-      <Expanded3>False</Expanded3>
-      <Notation3>Auto</Notation3>
-      <WatchId4>4</WatchId4>
-      <ParentId4>-1</ParentId4>
-      <WatchStatement4>gFsmFwupState</WatchStatement4>
-      <WatchType4>WatchItem</WatchType4>
-      <Memo4 />
-      <BitWidth4>8</BitWidth4>
-      <Encode4>20127</Encode4>
-      <WithHexadecimal4>True</WithHexadecimal4>
-      <Expanded4>False</Expanded4>
-      <Notation4>Auto</Notation4>
-      <WatchId5>5</WatchId5>
-      <ParentId5>-1</ParentId5>
-      <WatchStatement5>gIntervalTimerTick</WatchStatement5>
-      <WatchType5>WatchItem</WatchType5>
-      <Memo5 />
-      <BitWidth5>8</BitWidth5>
-      <Encode5>20127</Encode5>
-      <WithHexadecimal5>True</WithHexadecimal5>
-      <Expanded5>False</Expanded5>
-      <Notation5>Auto</Notation5>
-      <WatchId6>6</WatchId6>
-      <ParentId6>-1</ParentId6>
-      <WatchStatement6>gFsmFwupStateTimeout</WatchStatement6>
-      <WatchType6>WatchItem</WatchType6>
-      <Memo6 />
-      <BitWidth6>8</BitWidth6>
-      <Encode6>20127</Encode6>
-      <WithHexadecimal6>True</WithHexadecimal6>
-      <Expanded6>False</Expanded6>
-      <Notation6>Auto</Notation6>
-      <WatchId7>7</WatchId7>
-      <ParentId7>-1</ParentId7>
-      <WatchStatement7>packet</WatchStatement7>
-      <WatchType7>WatchItem</WatchType7>
-      <Memo7 />
-      <BitWidth7>8</BitWidth7>
-      <Encode7>20127</Encode7>
-      <WithHexadecimal7>True</WithHexadecimal7>
-      <Expanded7>False</Expanded7>
-      <Notation7>Auto</Notation7>
     </Instance>
     <Instance Guid="3e85fe22-38a0-44af-bbc8-8b0507ddb643">
       <Name>PanelWatch2</Name>
