@@ -29,6 +29,8 @@ Macro definitions
 #define MD_ERROR3           (MD_ERRORBASE + 0x04U)  /* error 3 */
 #define MD_ERROR4           (MD_ERRORBASE + 0x05U)  /* error 4 */
 
+#define DEBUG_ON
+
 typedef signed char         int8_t;
 typedef unsigned char       uint8_t;
 typedef signed short        int16_t;

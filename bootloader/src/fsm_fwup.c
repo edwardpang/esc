@@ -12,6 +12,10 @@ static uint8_t str_type_remote_control_ok[] = "OK+Set:1";
 static uint8_t str_type_remote_address[] = "AT+RADD?";
 static uint8_t str_type_remote_not_connected[] = "OK+RADD:000000000000";
 
+static uint8_t str_type_ep_hello[] = "EP+HELLO";
+static uint8_t str_type_ep_fwup_start[] = "EP+FWUP+START";
+static uint8_t str_type_ok_fwup_start[] = "OK+FWUP+START";
+
 /******************************************************************************
  Macro definitions
 ******************************************************************************/
@@ -68,6 +72,21 @@ void fsm_fwup_handler (void) {
 			break;
 
 		case FSM_FWUP_STATE_DEVICE_CONNECTED:
+			RL78G14_UART2_Receive (&rxbuf, sizeof (str_type_ep_fwup_start)-1);
+			gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (1000);
+			while (RL78G14_GetTick ( ) != gFsmFwupStateTimeout);
+			if (strstr (rxbuf, str_type_ep_fwup_start) != NULL) {
+				RL78G14_UART2_Send (str_type_ok_fwup_start, sizeof (str_type_ok_fwup_start)-1);
+				gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (100);
+				while (RL78G14_GetTick ( ) != gFsmFwupStateTimeout);
+				//gFsmFwupState = FSM_FWUP_STATE_FWUP_READY;
+			}
+			break;
+
+		case FSM_FWUP_STATE_ANDROID_ECHO:
+			break;
+
+		case FSM_FWUP_STATE_FWUP_READY:
 			break;
 			
 		case FSM_FWUP_STATE_COMPLETE:
