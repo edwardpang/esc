@@ -15,6 +15,9 @@ static uint8_t str_type_remote_not_connected[] = "OK+RADD:000000000000";
 static uint8_t str_type_ep_hello[] = "EP+HELLO";
 static uint8_t str_type_ep_fwup_start[] = "EP+FWUP+START";
 static uint8_t str_type_ok_fwup_start[] = "OK+FWUP+START";
+static uint8_t str_type_ep_fwup_total_block_num[] = "EP+FWUP+TBN:";
+static uint8_t str_type_ep_fwup_block[] = "EP+FWUP+BLK:";
+static uint8_t str_type_ok_fwup_block[] = "OK+FWUP+BLK:000";
 
 /******************************************************************************
  Macro definitions
@@ -77,16 +80,29 @@ void fsm_fwup_handler (void) {
 			while (RL78G14_GetTick ( ) != gFsmFwupStateTimeout);
 			if (strstr (rxbuf, str_type_ep_fwup_start) != NULL) {
 				RL78G14_UART2_Send (str_type_ok_fwup_start, sizeof (str_type_ok_fwup_start)-1);
-				gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (100);
+				gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (1000);
 				while (RL78G14_GetTick ( ) != gFsmFwupStateTimeout);
-				//gFsmFwupState = FSM_FWUP_STATE_FWUP_READY;
+				gFsmFwupState = FSM_FWUP_STATE_FWUP_STARTED;
 			}
 			break;
 
 		case FSM_FWUP_STATE_ANDROID_ECHO:
 			break;
 
-		case FSM_FWUP_STATE_FWUP_READY:
+		case FSM_FWUP_STATE_FWUP_STARTED:
+			RL78G14_UART2_Receive (&rxbuf, sizeof (str_type_ep_fwup_block)-1+3);
+			gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (5000);
+			while (RL78G14_GetTick ( ) != gFsmFwupStateTimeout);
+			if (strstr (rxbuf, str_type_ep_fwup_block) != NULL) {
+				int i = sizeof (str_type_ok_fwup_block) - 1;
+				str_type_ok_fwup_block[i-1] = rxbuf[i-1];
+				str_type_ok_fwup_block[i-2] = rxbuf[i-2];
+				str_type_ok_fwup_block[i-3] = rxbuf[i-3];
+				RL78G14_UART2_Send (str_type_ok_fwup_block, sizeof (str_type_ok_fwup_block)-1);
+				gFsmFwupStateTimeout = RL78G14_GetTickAfterMs (1000);
+				while (RL78G14_GetTick ( ) != gFsmFwupStateTimeout);
+				//gFsmFwupState = FSM_FWUP_STATE_FWUP_READY;
+			}
 			break;
 			
 		case FSM_FWUP_STATE_COMPLETE:

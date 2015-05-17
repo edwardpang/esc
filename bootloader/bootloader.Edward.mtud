@@ -10,32 +10,10 @@
       <EventFunction-Timer1-TimerLimit>0</EventFunction-Timer1-TimerLimit>
       <EventFunction-Timer1-StartTimerEvent-SaveLength>0</EventFunction-Timer1-StartTimerEvent-SaveLength>
       <EventFunction-Timer1-EndTimerEvent-SaveLength>0</EventFunction-Timer1-EndTimerEvent-SaveLength>
-      <EventFunction-Break1-Name>QgByAGUAYQBrADAAMAAwADEA</EventFunction-Break1-Name>
-      <EventFunction-Break1-Description />
-      <EventFunction-Break1-EventStatus>Enable</EventFunction-Break1-EventStatus>
-      <EventFunction-Break1-EventStatusBeforeInvalid>Invalid</EventFunction-Break1-EventStatusBeforeInvalid>
-      <EventFunction-Break1-IsBuiltIn>False</EventFunction-Break1-IsBuiltIn>
-      <EventFunction-Break1-CombinationType>None</EventFunction-Break1-CombinationType>
-      <EventFunction-Break1-HardwareBreakData-SaveLength>0</EventFunction-Break1-HardwareBreakData-SaveLength>
-      <EventFunction-Break1-SoftwareBreakData-SoftwareBreakNumber1>1</EventFunction-Break1-SoftwareBreakData-SoftwareBreakNumber1>
-      <EventFunction-Break1-SoftwareBreakData-EventConditionName1>RQB2AGUAbgB0ACAAQwBvAG4AZABpAHQAaQBvAG4AIAAxAA==</EventFunction-Break1-SoftwareBreakData-EventConditionName1>
-      <EventFunction-Break1-SoftwareBreakData-SaveLength>1</EventFunction-Break1-SoftwareBreakData-SaveLength>
-      <EventFunction-EventCondition1-Software-Name>RQB2AGUAbgB0ACAAQwBvAG4AZABpAHQAaQBvAG4AIAAxAA==</EventFunction-EventCondition1-Software-Name>
-      <EventFunction-EventCondition1-Software-Description />
-      <EventFunction-EventCondition1-Software-IsBuiltIn>False</EventFunction-EventCondition1-Software-IsBuiltIn>
-      <EventFunction-EventCondition1-Software-EventConditionType>Software</EventFunction-EventCondition1-Software-EventConditionType>
-      <EventFunction-EventCondition1-Software-EventNumber>1</EventFunction-EventCondition1-Software-EventNumber>
-      <EventFunction-EventCondition1-Software-BreakAddress-LocationType>SymbolOffset</EventFunction-EventCondition1-Software-BreakAddress-LocationType>
-      <EventFunction-EventCondition1-Software-BreakAddress-LoadModule>C:\workspace\project\esc2\sw\mcu\esc\bootloader\DefaultBuild\bootloader.lmf</EventFunction-EventCondition1-Software-BreakAddress-LoadModule>
-      <EventFunction-EventCondition1-Software-BreakAddress-File>fsm_fwup.c</EventFunction-EventCondition1-Software-BreakAddress-File>
-      <EventFunction-EventCondition1-Software-BreakAddress-Symbol>_fsm_fwup_handler</EventFunction-EventCondition1-Software-BreakAddress-Symbol>
-      <EventFunction-EventCondition1-Software-BreakAddress-Offset>296</EventFunction-EventCondition1-Software-BreakAddress-Offset>
-      <EventFunction-EventCondition1-Software-EffectiveBreakAddress-LocationType>Address</EventFunction-EventCondition1-Software-EffectiveBreakAddress-LocationType>
-      <EventFunction-EventCondition1-Software-EffectiveBreakAddress-Address>1588</EventFunction-EventCondition1-Software-EffectiveBreakAddress-Address>
       <EventFunction-SaveEventConditionItemHardwareNumber>0</EventFunction-SaveEventConditionItemHardwareNumber>
-      <EventFunction-SaveEventConditionItemSoftwareNumber>1</EventFunction-SaveEventConditionItemSoftwareNumber>
+      <EventFunction-SaveEventConditionItemSoftwareNumber>0</EventFunction-SaveEventConditionItemSoftwareNumber>
       <EventFunction-SaveActionEventNumber>0</EventFunction-SaveActionEventNumber>
-      <EventFunction-SaveBreakNumber>1</EventFunction-SaveBreakNumber>
+      <EventFunction-SaveBreakNumber>0</EventFunction-SaveBreakNumber>
       <EventFunction-SaveTimerNumber>1</EventFunction-SaveTimerNumber>
       <EventFunction-SaveTraceNumber>0</EventFunction-SaveTraceNumber>
       <EventFunction-SaveNumberOfProcessorElement>1</EventFunction-SaveNumberOfProcessorElement>
